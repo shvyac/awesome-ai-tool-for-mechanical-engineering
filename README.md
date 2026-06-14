@@ -11,6 +11,7 @@ A curated list of AI-powered tools, copilots, and platforms for mechanical engin
 - [Topology Optimization & Lightweighting](#topology-optimization--lightweighting)
 - [CAD Search, PDM & Knowledge](#cad-search-pdm--knowledge)
 - [DFM, GD&T & Design Review](#dfm-gdt--design-review)
+- [AI Tools for V&V (Verification and Validation)](#ai-tools-for-vv-verification-and-validation)
 - [MCP Connectors for CAD/Design Tools](#mcp-connectors-for-caddesign-tools)
 - [General Awesome Lists](#general-awesome-lists)
 - [Contributing](#contributing)
@@ -42,6 +43,13 @@ A curated list of AI-powered tools, copilots, and platforms for mechanical engin
 ## DFM, GD&T & Design Review
 
 - [bananaz](https://www.bananaz.ai/) - Detects geometric changes between CAD revisions and automates DFM checks, GD&T, tolerance analysis, and design inspections.
+
+## AI Tools for V&V (Verification and Validation)
+
+- [Monolith AI](https://monolithai.com/) - Machine learning platform for virtual testing that predicts test outcomes and helps validate designs with fewer physical prototypes.
+- [Ansys minerva](https://www.ansys.com/products/digital-twin/ansys-minerva) - AI-assisted simulation process and data management for traceable, auditable verification and validation workflows.
+- [Siemens Simcenter Testlab](https://www.plm.automation.siemens.com/global/en/products/simcenter/simcenter-testlab.html) - AI-driven test data analytics that correlate physical test results with simulation models for validation.
+- [COMSOL Model Manager](https://www.comsol.com/) - Manages, verifies, and version-controls multiphysics simulation models throughout the V&V process.
 
 ## MCP Connectors for CAD/Design Tools
 

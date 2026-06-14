@@ -11,6 +11,7 @@
 - [トポロジー最適化 & 軽量化](#トポロジー最適化--軽量化)
 - [CAD検索、PDM & ナレッジ](#cad検索pdm--ナレッジ)
 - [DFM、GD&T & デザインレビュー](#dfmgdt--デザインレビュー)
+- [V&V(検証・妥当性確認)向けAIツール](#vv検証妥当性確認向けaiツール)
 - [CAD/デザインツール向けMCPコネクタ](#caddデザインツール向けmcpコネクタ)
 - [その他のAwesomeリスト](#その他のawesomeリスト)
 - [コントリビューション](#コントリビューション)
@@ -42,6 +43,13 @@
 ## DFM、GD&T & デザインレビュー
 
 - [bananaz](https://www.bananaz.ai/) - CADリビジョン間の幾何学的変更を検出し、DFMチェック、GD&T、許容差解析、デザイン検査を自動化。
+
+## V&V(検証・妥当性確認)向けAIツール
+
+- [Monolith AI](https://monolithai.com/) - 実機テストの結果を予測し、物理プロトタイプを減らしながら設計を検証できる仮想テスト向け機械学習プラットフォーム。
+- [Ansys minerva](https://www.ansys.com/products/digital-twin/ansys-minerva) - シミュレーションのプロセスとデータをAIで管理し、検証・妥当性確認(V&V)ワークフローの追跡性と監査性を確保。
+- [Siemens Simcenter Testlab](https://www.plm.automation.siemens.com/global/en/products/simcenter/simcenter-testlab.html) - 物理試験結果とシミュレーションモデルを関連付けるAI駆動の試験データ解析により、妥当性確認を支援。
+- [COMSOL Model Manager](https://www.comsol.com/) - V&Vプロセス全体でマルチフィジックスシミュレーションモデルを管理、検証、バージョン管理。
 
 ## CAD/デザインツール向けMCPコネクタ
 
