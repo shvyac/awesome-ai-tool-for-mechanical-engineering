@@ -69,6 +69,7 @@ A curated list of AI-powered tools, copilots, and platforms for mechanical engin
 - [National Instruments VeriStand](https://www.ni.com/en/shop/veristand.html) - Real-time testing software for HIL simulation, model validation, and rapid control prototyping.
 - [MathWorks Simulink Test & Requirements Toolbox](https://www.mathworks.com/products/simulink-test.html) - Manages requirements traceability and automates verification of Simulink models against test cases.
 - [ETAS LABCAR](https://www.etas.com/en/products/labcar.php) - HIL test environment for validating automotive ECUs under realistic operating conditions.
+- [ASAM ODS (Open Data Services)](https://www.asam.net/standards/detail/ods/) - European standard for test data management, storing and exchanging measurement, simulation, and validation results across the V-model.
 
 ### AI-Assisted Large-Scale V&V (Vehicle-to-Component, L0-L3)
 
@@ -89,6 +90,7 @@ Open-source projects targeting the same vehicle-to-component V-model decompositi
 - [OpenMBEE](https://github.com/Open-MBEE) - <span style="color:blue">NASA JPL's open-source model-based systems engineering environment for managing requirements and architecture traceability from system to component level. (Open source)</span>
 - [Eclipse ProR](https://github.com/eclipse-rmf/org.eclipse.rmf) - <span style="color:blue">Open-source ReqIF-based requirements management and traceability tool for linking requirements across system levels to verification artifacts. (Open source)</span>
 - [CARLA](https://github.com/carla-simulator/carla) + [ASAM OpenSCENARIO/OpenDRIVE](https://github.com/esmini/esmini) - <span style="color:blue">Open-source autonomous-driving simulator and scenario standards for rolling up component/scenario-level test results into whole-vehicle validation. (Open source)</span>
+- [openMDM](https://github.com/openMDM) - <span style="color:blue">Open-source implementation of the ASAM ODS standard for managing and exchanging test, measurement, and validation data across the V-model. (Open source)</span>
 
 
 ## Contributing

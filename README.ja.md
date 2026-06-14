@@ -69,6 +69,7 @@
 - [National Instruments VeriStand](https://www.ni.com/en/shop/veristand.html) - HILシミュレーション、モデル検証、迅速な制御プロトタイピングのためのリアルタイムテストソフトウェア。
 - [MathWorks Simulink Test & Requirements Toolbox](https://www.mathworks.com/products/simulink-test.html) - 要求のトレーサビリティを管理し、Simulinkモデルのテストケースに対する検証を自動化。
 - [ETAS LABCAR](https://www.etas.com/en/products/labcar.php) - 実際の動作条件下で自動車ECUを検証するHILテスト環境。
+- [ASAM ODS (Open Data Services)](https://www.asam.net/standards/detail/ods/) - 欧州の試験データ管理標準で、Vモデル全体にわたる計測・シミュレーション・妥当性確認データの保存と交換を規定。
 
 ### AI支援による大規模V&V(車両~部品、L0-L3)
 
@@ -89,6 +90,7 @@
 - [OpenMBEE](https://github.com/Open-MBEE) - <span style="color:blue">NASA JPLによるオープンソースのモデルベースシステムズエンジニアリング環境で、システムから部品レベルまでの要求とアーキテクチャのトレーサビリティを管理。(オープンソース)</span>
 - [Eclipse ProR](https://github.com/eclipse-rmf/org.eclipse.rmf) - <span style="color:blue">ReqIFベースのオープンソース要求管理・トレーサビリティツールで、システムレベル間の要求と検証エビデンスを関連付け。(オープンソース)</span>
 - [CARLA](https://github.com/carla-simulator/carla) + [ASAM OpenSCENARIO/OpenDRIVE](https://github.com/esmini/esmini) - <span style="color:blue">部品/シナリオレベルの試験結果を車両全体の妥当性確認に積み上げるためのオープンソース自動運転シミュレータとシナリオ標準。(オープンソース)</span>
+- [openMDM](https://github.com/openMDM) - <span style="color:blue">ASAM ODS標準のオープンソース実装で、Vモデル全体にわたる試験・計測・妥当性確認データの管理と交換を行う。(オープンソース)</span>
 
 ## コントリビューション
 
