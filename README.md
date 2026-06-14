@@ -15,6 +15,7 @@ A curated list of AI-powered tools, copilots, and platforms for mechanical engin
 - [MCP Connectors for CAD/Design Tools](#mcp-connectors-for-caddesign-tools)
 - [General Awesome Lists](#general-awesome-lists)
 - [V&V Tools for Automotive Development](#vv-tools-for-automotive-development)
+  - [ASAM ODS Ecosystem - Major Members & Products](#asam-ods-ecosystem---major-members--products)
   - [AI-Assisted Large-Scale V&V (Vehicle-to-Component, L0-L3)](#ai-assisted-large-scale-vv-vehicle-to-component-l0-l3)
 - [Contributing](#contributing)
 
@@ -71,6 +72,17 @@ A curated list of AI-powered tools, copilots, and platforms for mechanical engin
 - [ETAS LABCAR](https://www.etas.com/en/products/labcar.php) - HIL test environment for validating automotive ECUs under realistic operating conditions.
 - [ASAM ODS (Open Data Services)](https://www.asam.net/standards/detail/ods/) - European standard for test data management, storing and exchanging measurement, simulation, and validation results across the V-model.
 
+#### ASAM ODS Ecosystem - Major Members & Products
+
+Major ASAM e.V. member companies that develop and maintain ASAM ODS-based test data management products.
+
+- [Peak Solution](https://www.peak-solution.com/) - Active contributor to the ASAM ODS working group; develops the [Peak ODS Server (PODS)](https://www.asam.net/members/product-directory/detail/peak-ods-server/), a platform-independent ASAM ODS server, and is a lead contributor to openMDM.
+- [AVL](https://www.avl.com/) - OEM/Tier-1 test equipment supplier whose [AVL CONCERTO](https://www.avl.com/) data analysis platform supports ASAM ODS for managing powertrain and vehicle test data.
+- [Vector Informatik](https://www.vector.com/) - ASAM member providing measurement and calibration tools (e.g., CANape, vSignalyzer) with ASAM ODS-based data management and exchange.
+- [Robert Bosch GmbH](https://www.bosch.com/) - OEM/Tier-1 ASAM member contributing requirements and use cases for ASAM ODS in automotive test data management.
+- [HighQSoft](https://www.highqsoft.com/) - ASAM member offering ASAM ODS consulting, data model design, and integration services for test data management systems.
+- [MBBM-VAS](https://www.mbbm-vas.com/) - ASAM member providing [ASAM ODS & openMDM-based](https://www.mbbm-vas.com/en/products/data-management/asam-ods) data management products for measurement and test data.
+
 ### AI-Assisted Large-Scale V&V (Vehicle-to-Component, L0-L3)
 
 Tools that support the full automotive V-model: left-side requirements decomposition from whole-vehicle (L0) down to systems (L1), subsystems (L2), and components/parts (L3), and right-side validation that rolls component-level (L3) test results back up to whole-vehicle (L0) validation.
@@ -90,7 +102,7 @@ Open-source projects targeting the same vehicle-to-component V-model decompositi
 - [OpenMBEE](https://github.com/Open-MBEE) - <span style="color:blue">NASA JPL's open-source model-based systems engineering environment for managing requirements and architecture traceability from system to component level. (Open source)</span>
 - [Eclipse ProR](https://github.com/eclipse-rmf/org.eclipse.rmf) - <span style="color:blue">Open-source ReqIF-based requirements management and traceability tool for linking requirements across system levels to verification artifacts. (Open source)</span>
 - [CARLA](https://github.com/carla-simulator/carla) + [ASAM OpenSCENARIO/OpenDRIVE](https://github.com/esmini/esmini) - <span style="color:blue">Open-source autonomous-driving simulator and scenario standards for rolling up component/scenario-level test results into whole-vehicle validation. (Open source)</span>
-- [openMDM](https://github.com/openMDM) - <span style="color:blue">Open-source implementation of the ASAM ODS standard for managing and exchanging test, measurement, and validation data across the V-model. (Open source)</span>
+- [openMDM](https://openmdm.org/) - <span style="color:blue">Eclipse Foundation open-source kit of components and concepts, built on the ASAM ODS standard, for composing measured/test data management systems used to exchange and trace test and validation data across the V-model. (Open source)</span>
 
 
 ## Contributing

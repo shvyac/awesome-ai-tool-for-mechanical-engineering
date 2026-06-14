@@ -15,6 +15,7 @@
 - [CAD/デザインツール向けMCPコネクタ](#caddデザインツール向けmcpコネクタ)
 - [その他のAwesomeリスト](#その他のawesomeリスト)
 - [自動車開発システム向けV&Vツール](#自動車開発システム向けvvツール)
+  - [ASAM ODSエコシステム - 主要メンバー & 製品](#asam-odsエコシステム---主要メンバー--製品)
   - [AI支援による大規模V&V(車両~部品、L0-L3)](#ai支援による大規模vv車両部品l0-l3)
 - [コントリビューション](#コントリビューション)
 
@@ -71,6 +72,17 @@
 - [ETAS LABCAR](https://www.etas.com/en/products/labcar.php) - 実際の動作条件下で自動車ECUを検証するHILテスト環境。
 - [ASAM ODS (Open Data Services)](https://www.asam.net/standards/detail/ods/) - 欧州の試験データ管理標準で、Vモデル全体にわたる計測・シミュレーション・妥当性確認データの保存と交換を規定。
 
+#### ASAM ODSエコシステム - 主要メンバー & 製品
+
+ASAM ODSベースの試験データ管理製品を開発・保守する主要なASAM e.V.加盟企業。
+
+- [Peak Solution](https://www.peak-solution.com/) - ASAM ODSワーキンググループの活発な貢献企業。プラットフォーム非依存のASAM ODSサーバー[Peak ODS Server (PODS)](https://www.asam.net/members/product-directory/detail/peak-ods-server/)を開発し、openMDMの主要コントリビューターでもある。
+- [AVL](https://www.avl.com/) - パワートレインおよび車両の試験データ管理にASAM ODSを対応させた[AVL CONCERTO](https://www.avl.com/)データ解析プラットフォームを提供するOEM/Tier-1試験機器サプライヤー。
+- [Vector Informatik](https://www.vector.com/) - ASAM ODSベースのデータ管理・交換機能を備えた計測・キャリブレーションツール(CANape、vSignalyzerなど)を提供するASAM加盟企業。
+- [Robert Bosch GmbH](https://www.bosch.com/) - 自動車試験データ管理におけるASAM ODSの要件・ユースケースに貢献するOEM/Tier-1のASAM加盟企業。
+- [HighQSoft](https://www.highqsoft.com/) - 試験データ管理システム向けのASAM ODSコンサルティング、データモデル設計、統合サービスを提供するASAM加盟企業。
+- [MBBM-VAS](https://www.mbbm-vas.com/) - 計測・試験データ向けの[ASAM ODS & openMDMベースの](https://www.mbbm-vas.com/en/products/data-management/asam-ods)データ管理製品を提供するASAM加盟企業。
+
 ### AI支援による大規模V&V(車両~部品、L0-L3)
 
 自動車のVモデル全体を支援するツール群です。左側では車両全体(L0)からシステム(L1)、サブシステム(L2)、部品/コンポーネント(L3)へと要求を分解し、右側では部品レベル(L3)の試験結果を車両全体(L0)の妥当性確認へと積み上げます。
@@ -90,7 +102,7 @@
 - [OpenMBEE](https://github.com/Open-MBEE) - <span style="color:blue">NASA JPLによるオープンソースのモデルベースシステムズエンジニアリング環境で、システムから部品レベルまでの要求とアーキテクチャのトレーサビリティを管理。(オープンソース)</span>
 - [Eclipse ProR](https://github.com/eclipse-rmf/org.eclipse.rmf) - <span style="color:blue">ReqIFベースのオープンソース要求管理・トレーサビリティツールで、システムレベル間の要求と検証エビデンスを関連付け。(オープンソース)</span>
 - [CARLA](https://github.com/carla-simulator/carla) + [ASAM OpenSCENARIO/OpenDRIVE](https://github.com/esmini/esmini) - <span style="color:blue">部品/シナリオレベルの試験結果を車両全体の妥当性確認に積み上げるためのオープンソース自動運転シミュレータとシナリオ標準。(オープンソース)</span>
-- [openMDM](https://github.com/openMDM) - <span style="color:blue">ASAM ODS標準のオープンソース実装で、Vモデル全体にわたる試験・計測・妥当性確認データの管理と交換を行う。(オープンソース)</span>
+- [openMDM](https://openmdm.org/) - <span style="color:blue">ASAM ODS標準をベースにしたEclipse Foundationのオープンソースコンポーネント/コンセプト群で、Vモデル全体にわたる試験・計測・妥当性確認データを管理・交換するシステムを構築できる。(オープンソース)</span>
 
 ## コントリビューション
 
