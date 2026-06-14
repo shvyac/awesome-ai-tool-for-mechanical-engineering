@@ -2,6 +2,8 @@
 
 A curated list of AI-powered tools, copilots, and platforms for mechanical engineering — covering CAD, simulation, generative design, topology optimization, manufacturing, and more.
 
+[日本語](README.ja.md)
+
 ## Contents
 
 - [CAD Copilots & Generative Design](#cad-copilots--generative-design)
