@@ -2,6 +2,8 @@
 
 A curated list of AI-powered tools, copilots, and platforms for mechanical engineering — covering CAD, simulation, generative design, topology optimization, manufacturing, and more.
 
+[日本語](README.ja.md)
+
 ## Contents
 
 - [CAD Copilots & Generative Design](#cad-copilots--generative-design)
@@ -43,12 +45,12 @@ A curated list of AI-powered tools, copilots, and platforms for mechanical engin
 
 ## MCP Connectors for CAD/Design Tools
 
-- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - Curated list including official MCP connectors for CAD/design vendors: Autodesk Fusion MCP, Autodesk Fusion Data MCP, the Blender Lab MCP server, and the SketchUp Connector.
+- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - <span style="color:blue">Curated list including official MCP connectors for CAD/design vendors: Autodesk Fusion MCP, Autodesk Fusion Data MCP, the Blender Lab MCP server, and the SketchUp Connector. (Open source)</span>
 
 ## General Awesome Lists
 
-- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - A curated list of AI tools for hardware engineering — CAD, simulation, manufacturing, and beyond.
-- [awesome-mechanical-engineering](https://github.com/awesomelistsio/awesome-mechanical-engineering) - A curated list of tools, platforms, resources, and educational content for Mechanical Engineering.
+- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - <span style="color:blue">A curated list of AI tools for hardware engineering — CAD, simulation, manufacturing, and beyond. (Open source)</span>
+- [awesome-mechanical-engineering](https://github.com/awesomelistsio/awesome-mechanical-engineering) - <span style="color:blue">A curated list of tools, platforms, resources, and educational content for Mechanical Engineering. (Open source)</span>
 
 ## Contributing
 
