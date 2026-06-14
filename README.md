@@ -15,6 +15,7 @@ A curated list of AI-powered tools, copilots, and platforms for mechanical engin
 - [MCP Connectors for CAD/Design Tools](#mcp-connectors-for-caddesign-tools)
 - [General Awesome Lists](#general-awesome-lists)
 - [V&V Tools for Automotive Development](#vv-tools-for-automotive-development)
+  - [AI-Assisted Large-Scale V&V (Vehicle-to-Component, L0-L3)](#ai-assisted-large-scale-vv-vehicle-to-component-l0-l3)
 - [Contributing](#contributing)
 
 ## CAD Copilots & Generative Design
@@ -68,6 +69,17 @@ A curated list of AI-powered tools, copilots, and platforms for mechanical engin
 - [National Instruments VeriStand](https://www.ni.com/en/shop/veristand.html) - Real-time testing software for HIL simulation, model validation, and rapid control prototyping.
 - [MathWorks Simulink Test & Requirements Toolbox](https://www.mathworks.com/products/simulink-test.html) - Manages requirements traceability and automates verification of Simulink models against test cases.
 - [ETAS LABCAR](https://www.etas.com/en/products/labcar.php) - HIL test environment for validating automotive ECUs under realistic operating conditions.
+
+### AI-Assisted Large-Scale V&V (Vehicle-to-Component, L0-L3)
+
+Tools that support the full automotive V-model: left-side requirements decomposition from whole-vehicle (L0) down to systems (L1), subsystems (L2), and components/parts (L3), and right-side validation that rolls component-level (L3) test results back up to whole-vehicle (L0) validation.
+
+- [Siemens Polarion + Capital](https://www.plm.automation.siemens.com/global/en/products/polarion/) - AI-assisted requirements management and impact analysis with end-to-end traceability across vehicle, system, subsystem, and component levels.
+- [PTC Codebeamer X](https://www.ptc.com/en/products/codebeamer) - AI-powered requirements decomposition, coverage analysis, and test traceability across the full V-model hierarchy.
+- [Vector PREEvision](https://www.vector.com/int/en/products/products-a-z/software/preevision/) - E/E systems engineering tool for decomposing vehicle-level requirements into system, subsystem, and component specifications, with traceability for V&V roll-up.
+- [IBM Engineering Lifecycle Management (ELM) with watsonx](https://www.ibm.com/products/engineering-lifecycle-management) - AI-assisted requirements analysis, change impact, and verification traceability spanning vehicle to part-level artifacts.
+- [Ansys medini analyze](https://www.ansys.com/products/safety-analysis/ansys-medini-analyze) - Model-based safety and requirements analysis that links system-level hazards to component-level verification evidence.
+
 
 ## Contributing
 
