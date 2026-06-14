@@ -15,6 +15,7 @@
 - [CAD/デザインツール向けMCPコネクタ](#caddデザインツール向けmcpコネクタ)
 - [その他のAwesomeリスト](#その他のawesomeリスト)
 - [自動車開発システム向けV&Vツール](#自動車開発システム向けvvツール)
+  - [AI支援による大規模V&V(車両~部品、L0-L3)](#ai支援による大規模vv車両部品l0-l3)
 - [コントリビューション](#コントリビューション)
 
 ## CADコパイロット & ジェネレーティブデザイン
@@ -68,6 +69,16 @@
 - [National Instruments VeriStand](https://www.ni.com/en/shop/veristand.html) - HILシミュレーション、モデル検証、迅速な制御プロトタイピングのためのリアルタイムテストソフトウェア。
 - [MathWorks Simulink Test & Requirements Toolbox](https://www.mathworks.com/products/simulink-test.html) - 要求のトレーサビリティを管理し、Simulinkモデルのテストケースに対する検証を自動化。
 - [ETAS LABCAR](https://www.etas.com/en/products/labcar.php) - 実際の動作条件下で自動車ECUを検証するHILテスト環境。
+
+### AI支援による大規模V&V(車両~部品、L0-L3)
+
+自動車のVモデル全体を支援するツール群です。左側では車両全体(L0)からシステム(L1)、サブシステム(L2)、部品/コンポーネント(L3)へと要求を分解し、右側では部品レベル(L3)の試験結果を車両全体(L0)の妥当性確認へと積み上げます。
+
+- [Siemens Polarion + Capital](https://www.plm.automation.siemens.com/global/en/products/polarion/) - 車両、システム、サブシステム、部品の各レベルにわたるエンドツーエンドのトレーサビリティを実現するAI支援の要求管理とインパクト分析。
+- [PTC Codebeamer X](https://www.ptc.com/en/products/codebeamer) - Vモデル階層全体にわたる要求分解、カバレッジ分析、テストトレーサビリティをAIで支援。
+- [Vector PREEvision](https://www.vector.com/int/en/products/products-a-z/software/preevision/) - 車両レベルの要求をシステム、サブシステム、部品の仕様に分解し、V&Vの積み上げのためのトレーサビリティを提供するE/Eシステムエンジニアリングツール。
+- [IBM Engineering Lifecycle Management (ELM) with watsonx](https://www.ibm.com/products/engineering-lifecycle-management) - 車両レベルから部品レベルの成果物にまたがる要求分析、変更影響分析、検証トレーサビリティをAIで支援。
+- [Ansys medini analyze](https://www.ansys.com/products/safety-analysis/ansys-medini-analyze) - システムレベルのハザードと部品レベルの検証エビデンスを関連付けるモデルベースの安全性・要求分析。
 
 ## コントリビューション
 
