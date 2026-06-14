@@ -15,6 +15,7 @@
 - [CAD/デザインツール向けMCPコネクタ](#caddデザインツール向けmcpコネクタ)
 - [その他のAwesomeリスト](#その他のawesomeリスト)
 - [自動車開発システム向けV&Vツール](#自動車開発システム向けvvツール)
+  - [ASAM ODSエコシステム - 主要メンバー & 製品](#asam-odsエコシステム---主要メンバー--製品)
   - [AI支援による大規模V&V(車両~部品、L0-L3)](#ai支援による大規模vv車両部品l0-l3)
 - [コントリビューション](#コントリビューション)
 
@@ -70,6 +71,17 @@
 - [MathWorks Simulink Test & Requirements Toolbox](https://www.mathworks.com/products/simulink-test.html) - 要求のトレーサビリティを管理し、Simulinkモデルのテストケースに対する検証を自動化。
 - [ETAS LABCAR](https://www.etas.com/en/products/labcar.php) - 実際の動作条件下で自動車ECUを検証するHILテスト環境。
 - [ASAM ODS (Open Data Services)](https://www.asam.net/standards/detail/ods/) - 欧州の試験データ管理標準で、Vモデル全体にわたる計測・シミュレーション・妥当性確認データの保存と交換を規定。
+
+#### ASAM ODSエコシステム - 主要メンバー & 製品
+
+ASAM ODSベースの試験データ管理製品を開発・保守する主要なASAM e.V.加盟企業。
+
+- [Peak Solution](https://www.peak-solution.com/) - ASAM ODSワーキンググループの活発な貢献企業。プラットフォーム非依存のASAM ODSサーバー[Peak ODS Server (PODS)](https://www.asam.net/members/product-directory/detail/peak-ods-server/)を開発し、openMDMの主要コントリビューターでもある。
+- [AVL](https://www.avl.com/) - パワートレインおよび車両の試験データ管理にASAM ODSを対応させた[AVL CONCERTO](https://www.avl.com/)データ解析プラットフォームを提供するOEM/Tier-1試験機器サプライヤー。
+- [Vector Informatik](https://www.vector.com/) - ASAM ODSベースのデータ管理・交換機能を備えた計測・キャリブレーションツール(CANape、vSignalyzerなど)を提供するASAM加盟企業。
+- [Robert Bosch GmbH](https://www.bosch.com/) - 自動車試験データ管理におけるASAM ODSの要件・ユースケースに貢献するOEM/Tier-1のASAM加盟企業。
+- [HighQSoft](https://www.highqsoft.com/) - 試験データ管理システム向けのASAM ODSコンサルティング、データモデル設計、統合サービスを提供するASAM加盟企業。
+- [MBBM-VAS](https://www.mbbm-vas.com/) - 計測・試験データ向けの[ASAM ODS & openMDMベースの](https://www.mbbm-vas.com/en/products/data-management/asam-ods)データ管理製品を提供するASAM加盟企業。
 
 ### AI支援による大規模V&V(車両~部品、L0-L3)
 
