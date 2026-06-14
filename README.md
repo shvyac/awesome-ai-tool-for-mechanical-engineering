@@ -14,6 +14,7 @@ A curated list of AI-powered tools, copilots, and platforms for mechanical engin
 - [AI Tools for V&V (Verification and Validation)](#ai-tools-for-vv-verification-and-validation)
 - [MCP Connectors for CAD/Design Tools](#mcp-connectors-for-caddesign-tools)
 - [General Awesome Lists](#general-awesome-lists)
+- [V&V Tools for Automotive Development](#vv-tools-for-automotive-development)
 - [Contributing](#contributing)
 
 ## CAD Copilots & Generative Design
@@ -59,6 +60,14 @@ A curated list of AI-powered tools, copilots, and platforms for mechanical engin
 
 - [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - <span style="color:blue">A curated list of AI tools for hardware engineering — CAD, simulation, manufacturing, and beyond. (Open source)</span>
 - [awesome-mechanical-engineering](https://github.com/awesomelistsio/awesome-mechanical-engineering) - <span style="color:blue">A curated list of tools, platforms, resources, and educational content for Mechanical Engineering. (Open source)</span>
+
+## V&V Tools for Automotive Development
+
+- [dSPACE SCALEXIO / ASM](https://www.dspace.com/) - Hardware-in-the-loop (HIL) test systems and simulation models for verifying ECU software and vehicle dynamics.
+- [Vector CANoe](https://www.vector.com/int/en/products/products-a-z/software/canoe/) - Tool for development, testing, and analysis of ECUs and networks across the automotive V-model.
+- [National Instruments VeriStand](https://www.ni.com/en/shop/veristand.html) - Real-time testing software for HIL simulation, model validation, and rapid control prototyping.
+- [MathWorks Simulink Test & Requirements Toolbox](https://www.mathworks.com/products/simulink-test.html) - Manages requirements traceability and automates verification of Simulink models against test cases.
+- [ETAS LABCAR](https://www.etas.com/en/products/labcar.php) - HIL test environment for validating automotive ECUs under realistic operating conditions.
 
 ## Contributing
 

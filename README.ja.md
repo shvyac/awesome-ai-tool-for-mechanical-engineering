@@ -14,6 +14,7 @@
 - [V&V(検証・妥当性確認)向けAIツール](#vv検証妥当性確認向けaiツール)
 - [CAD/デザインツール向けMCPコネクタ](#caddデザインツール向けmcpコネクタ)
 - [その他のAwesomeリスト](#その他のawesomeリスト)
+- [自動車開発システム向けV&Vツール](#自動車開発システム向けvvツール)
 - [コントリビューション](#コントリビューション)
 
 ## CADコパイロット & ジェネレーティブデザイン
@@ -59,6 +60,14 @@
 
 - [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - <span style="color:blue">ハードウェアエンジニアリング向けのAIツール(CAD、シミュレーション、製造など)のキュレーションリスト。(オープンソース)</span>
 - [awesome-mechanical-engineering](https://github.com/awesomelistsio/awesome-mechanical-engineering) - <span style="color:blue">機械工学のためのツール、プラットフォーム、リソース、教育コンテンツのキュレーションリスト。(オープンソース)</span>
+
+## 自動車開発システム向けV&Vツール
+
+- [dSPACE SCALEXIO / ASM](https://www.dspace.com/) - ECUソフトウェアと車両ダイナミクスを検証するためのHIL(Hardware-in-the-Loop)テストシステムとシミュレーションモデル。
+- [Vector CANoe](https://www.vector.com/int/en/products/products-a-z/software/canoe/) - 自動車のVモデル全体でECUおよびネットワークの開発、テスト、解析を行うツール。
+- [National Instruments VeriStand](https://www.ni.com/en/shop/veristand.html) - HILシミュレーション、モデル検証、迅速な制御プロトタイピングのためのリアルタイムテストソフトウェア。
+- [MathWorks Simulink Test & Requirements Toolbox](https://www.mathworks.com/products/simulink-test.html) - 要求のトレーサビリティを管理し、Simulinkモデルのテストケースに対する検証を自動化。
+- [ETAS LABCAR](https://www.etas.com/en/products/labcar.php) - 実際の動作条件下で自動車ECUを検証するHILテスト環境。
 
 ## コントリビューション
 
