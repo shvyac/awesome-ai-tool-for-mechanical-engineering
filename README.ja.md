@@ -45,12 +45,12 @@
 
 ## CAD/デザインツール向けMCPコネクタ
 
-- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - CAD/デザインベンダー向けの公式MCPコネクタ(Autodesk Fusion MCP、Autodesk Fusion Data MCP、Blender Lab MCPサーバー、SketchUpコネクタなど)を含むキュレーションリスト。
+- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - <span style="color:blue">CAD/デザインベンダー向けの公式MCPコネクタ(Autodesk Fusion MCP、Autodesk Fusion Data MCP、Blender Lab MCPサーバー、SketchUpコネクタなど)を含むキュレーションリスト。(オープンソース)</span>
 
 ## その他のAwesomeリスト
 
-- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - ハードウェアエンジニアリング向けのAIツール(CAD、シミュレーション、製造など)のキュレーションリスト。
-- [awesome-mechanical-engineering](https://github.com/awesomelistsio/awesome-mechanical-engineering) - 機械工学のためのツール、プラットフォーム、リソース、教育コンテンツのキュレーションリスト。
+- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - <span style="color:blue">ハードウェアエンジニアリング向けのAIツール(CAD、シミュレーション、製造など)のキュレーションリスト。(オープンソース)</span>
+- [awesome-mechanical-engineering](https://github.com/awesomelistsio/awesome-mechanical-engineering) - <span style="color:blue">機械工学のためのツール、プラットフォーム、リソース、教育コンテンツのキュレーションリスト。(オープンソース)</span>
 
 ## コントリビューション
 
