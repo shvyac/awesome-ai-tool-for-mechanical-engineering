@@ -90,7 +90,7 @@
 - [OpenMBEE](https://github.com/Open-MBEE) - <span style="color:blue">NASA JPLによるオープンソースのモデルベースシステムズエンジニアリング環境で、システムから部品レベルまでの要求とアーキテクチャのトレーサビリティを管理。(オープンソース)</span>
 - [Eclipse ProR](https://github.com/eclipse-rmf/org.eclipse.rmf) - <span style="color:blue">ReqIFベースのオープンソース要求管理・トレーサビリティツールで、システムレベル間の要求と検証エビデンスを関連付け。(オープンソース)</span>
 - [CARLA](https://github.com/carla-simulator/carla) + [ASAM OpenSCENARIO/OpenDRIVE](https://github.com/esmini/esmini) - <span style="color:blue">部品/シナリオレベルの試験結果を車両全体の妥当性確認に積み上げるためのオープンソース自動運転シミュレータとシナリオ標準。(オープンソース)</span>
-- [openMDM](https://github.com/openMDM) - <span style="color:blue">ASAM ODS標準のオープンソース実装で、Vモデル全体にわたる試験・計測・妥当性確認データの管理と交換を行う。(オープンソース)</span>
+- [openMDM](https://openmdm.org/) - <span style="color:blue">ASAM ODS標準をベースにしたEclipse Foundationのオープンソースコンポーネント/コンセプト群で、Vモデル全体にわたる試験・計測・妥当性確認データを管理・交換するシステムを構築できる。(オープンソース)</span>
 
 ## コントリビューション
 

@@ -90,7 +90,7 @@ Open-source projects targeting the same vehicle-to-component V-model decompositi
 - [OpenMBEE](https://github.com/Open-MBEE) - <span style="color:blue">NASA JPL's open-source model-based systems engineering environment for managing requirements and architecture traceability from system to component level. (Open source)</span>
 - [Eclipse ProR](https://github.com/eclipse-rmf/org.eclipse.rmf) - <span style="color:blue">Open-source ReqIF-based requirements management and traceability tool for linking requirements across system levels to verification artifacts. (Open source)</span>
 - [CARLA](https://github.com/carla-simulator/carla) + [ASAM OpenSCENARIO/OpenDRIVE](https://github.com/esmini/esmini) - <span style="color:blue">Open-source autonomous-driving simulator and scenario standards for rolling up component/scenario-level test results into whole-vehicle validation. (Open source)</span>
-- [openMDM](https://github.com/openMDM) - <span style="color:blue">Open-source implementation of the ASAM ODS standard for managing and exchanging test, measurement, and validation data across the V-model. (Open source)</span>
+- [openMDM](https://openmdm.org/) - <span style="color:blue">Eclipse Foundation open-source kit of components and concepts, built on the ASAM ODS standard, for composing measured/test data management systems used to exchange and trace test and validation data across the V-model. (Open source)</span>
 
 
 ## Contributing
