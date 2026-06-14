@@ -80,6 +80,16 @@
 - [IBM Engineering Lifecycle Management (ELM) with watsonx](https://www.ibm.com/products/engineering-lifecycle-management) - 車両レベルから部品レベルの成果物にまたがる要求分析、変更影響分析、検証トレーサビリティをAIで支援。
 - [Ansys medini analyze](https://www.ansys.com/products/safety-analysis/ansys-medini-analyze) - システムレベルのハザードと部品レベルの検証エビデンスを関連付けるモデルベースの安全性・要求分析。
 
+#### オープンソースの代替
+
+車両~部品レベルのVモデル分解と妥当性確認の積み上げという同じ目標を持つオープンソースプロジェクト。
+
+- [Eclipse Capella](https://github.com/eclipse-capella/capella) - <span style="color:blue">Arcadiaメソッドを実装したオープンソースのMBSEツールで、運用・システム・論理・物理レベル(L0-L3)にわたるシステムアーキテクチャの分解を支援。(オープンソース)</span>
+- [Eclipse SCORE](https://github.com/eclipse-score/score) - <span style="color:blue">Boschが主導するソフトウェア定義車両向けオープンソースプラットフォームで、車両ソフトウェアスタック全体の要求、アーキテクチャ、V&Vツールを含む。(オープンソース)</span>
+- [OpenMBEE](https://github.com/Open-MBEE) - <span style="color:blue">NASA JPLによるオープンソースのモデルベースシステムズエンジニアリング環境で、システムから部品レベルまでの要求とアーキテクチャのトレーサビリティを管理。(オープンソース)</span>
+- [Eclipse ProR](https://github.com/eclipse-rmf/org.eclipse.rmf) - <span style="color:blue">ReqIFベースのオープンソース要求管理・トレーサビリティツールで、システムレベル間の要求と検証エビデンスを関連付け。(オープンソース)</span>
+- [CARLA](https://github.com/carla-simulator/carla) + [ASAM OpenSCENARIO/OpenDRIVE](https://github.com/esmini/esmini) - <span style="color:blue">部品/シナリオレベルの試験結果を車両全体の妥当性確認に積み上げるためのオープンソース自動運転シミュレータとシナリオ標準。(オープンソース)</span>
+
 ## コントリビューション
 
 コントリビューションを歓迎します!ツールの追加、リンク切れの修正、新しいカテゴリの提案などは、プルリクエストを開いてください。

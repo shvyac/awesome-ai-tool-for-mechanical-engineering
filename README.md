@@ -80,6 +80,16 @@ Tools that support the full automotive V-model: left-side requirements decomposi
 - [IBM Engineering Lifecycle Management (ELM) with watsonx](https://www.ibm.com/products/engineering-lifecycle-management) - AI-assisted requirements analysis, change impact, and verification traceability spanning vehicle to part-level artifacts.
 - [Ansys medini analyze](https://www.ansys.com/products/safety-analysis/ansys-medini-analyze) - Model-based safety and requirements analysis that links system-level hazards to component-level verification evidence.
 
+#### Open Source Alternatives
+
+Open-source projects targeting the same vehicle-to-component V-model decomposition and validation roll-up goals.
+
+- [Eclipse Capella](https://github.com/eclipse-capella/capella) - <span style="color:blue">Open-source MBSE tool implementing the Arcadia method for decomposing system architectures across operational, system, logical, and physical levels (L0-L3). (Open source)</span>
+- [Eclipse SCORE](https://github.com/eclipse-score/score) - <span style="color:blue">Bosch-led open-source platform for software-defined vehicles, including requirements, architecture, and V&V tooling across the vehicle software stack. (Open source)</span>
+- [OpenMBEE](https://github.com/Open-MBEE) - <span style="color:blue">NASA JPL's open-source model-based systems engineering environment for managing requirements and architecture traceability from system to component level. (Open source)</span>
+- [Eclipse ProR](https://github.com/eclipse-rmf/org.eclipse.rmf) - <span style="color:blue">Open-source ReqIF-based requirements management and traceability tool for linking requirements across system levels to verification artifacts. (Open source)</span>
+- [CARLA](https://github.com/carla-simulator/carla) + [ASAM OpenSCENARIO/OpenDRIVE](https://github.com/esmini/esmini) - <span style="color:blue">Open-source autonomous-driving simulator and scenario standards for rolling up component/scenario-level test results into whole-vehicle validation. (Open source)</span>
+
 
 ## Contributing
 
