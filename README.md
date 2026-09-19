@@ -1,14 +1,17 @@
 # Awesome AI Tools for Mechanical Engineering
 
-A curated list of AI-powered tools, copilots, and platforms for mechanical engineering — covering CAD, simulation, generative design, topology optimization, manufacturing, and more.
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+A curated list of AI-powered tools, copilots, and platforms for mechanical engineering — CAD, CAE/simulation, generative design, topology optimization, design review, Physics-ML surrogates, manufacturing-aware workflows, and V&V.
 
 [日本語](README.ja.md)
 
 ## Contents
 
-- [CAD Copilots & Generative Design](#cad-copilots--generative-design)
-- [Simulation & CAE (FEA/CFD)](#simulation--cae-feacfd)
-- [Topology Optimization & Lightweighting](#topology-optimization--lightweighting)
+- [CAD Copilots & Text-to-CAD](#cad-copilots--text-to-cad)
+- [Generative Design & Topology Optimization](#generative-design--topology-optimization)
+- [Simulation, CAE & Surrogate AI](#simulation-cae--surrogate-ai)
+- [Physics-ML, PINNs & Open Frameworks](#physics-ml-pinns--open-frameworks)
 - [CAD Search, PDM & Knowledge](#cad-search-pdm--knowledge)
 - [DFM, GD&T & Design Review](#dfm-gdt--design-review)
 - [AI Tools for V&V (Verification and Validation)](#ai-tools-for-vv-verification-and-validation)
@@ -19,49 +22,84 @@ A curated list of AI-powered tools, copilots, and platforms for mechanical engin
   - [AI-Assisted Large-Scale V&V (Vehicle-to-Component, L0-L3)](#ai-assisted-large-scale-vv-vehicle-to-component-l0-l3)
 - [Contributing](#contributing)
 
-## CAD Copilots & Generative Design
+---
 
-- [SolidWorks AURA](https://www.solidworks.com/) - AI assistant integrated into SolidWorks for design automation and command prediction.
-- [Creo AI Assistant](https://www.ptc.com/en/products/creo) - PTC's AI assistant for Creo offering geometry generation and modeling guidance.
-- [Inventor Design Copilot](https://www.autodesk.com/products/inventor/) - AI-driven design assistant for Autodesk Inventor.
-- [CATIA 3DEXPERIENCE AI](https://www.3ds.com/products/catia) - Dassault Systèmes' AI capabilities for geometry generation and constraint automation.
-- [Fusion 360 Generative Design](https://www.autodesk.com/products/fusion-360/) - Generates optimized design alternatives based on constraints and manufacturing methods.
-- [Leo AI](https://www.getleo.ai/) - Generative AI for engineering CAD design and shape-based part search.
+## CAD Copilots & Text-to-CAD
 
-## Simulation & CAE (FEA/CFD)
+Natural-language assistants and text-to-CAD tools that accelerate modeling inside (or next to) MCAD.
 
-- [Ansys AI+](https://www.ansys.com/) - AI-assisted FEA/CFD setup, meshing, and boundary condition suggestions.
-- [SimScale](https://www.simscale.com/) - Cloud-based CAE platform with AI-assisted simulation setup for FEA, CFD, and thermal analysis.
-- [Autodesk Discovery](https://www.autodesk.com/) - Real-time simulation feedback (structural, thermal, fluid flow) during modeling, without long solve times.
+- [SOLIDWORKS AI Virtual Companions (AURA & LEO)](https://www.solidworks.com/product/solidworks-design/ai-companions) - In-app AI companions: AURA for enterprise/web knowledge, LEO for conversational design assistance (drawings, assemblies, feature-tree help).
+- [Creo AI Assistant](https://support.ptc.com/help/creo/creo_ai/usascii/ai_assistant/overview.html) - PTC's in-Creo assistant for docs, model-context Q&A, and assisted CAD tasks.
+- [Autodesk Assistant in Inventor](https://help.autodesk.com/view/INVNTOR/2027/ENU/?guid=ABOUT-AUTODESK-ASSISTANT-INVENTOR) - Autodesk Assistant add-in for Inventor: natural-language help, model queries, and task automation.
+- [MecAgent](https://mecagent.com/) - AI CAD copilot for SOLIDWORKS & Inventor: text-to-macros, drawing automation, engineering Q&A, and experimental text-to-STEP/STL.
+- [Zoo Design Studio (Zookeeper)](https://zoo.dev/) - AI-native CAD with conversational text-to-CAD (editable B-rep / KCL); see [docs](https://zoo.dev/docs).
+- [Leo AI](https://www.getleo.ai/) - Generative AI for mechanical CAD: assemblies from specs/sketches and shape-based part search.
+- [CATIA / 3DEXPERIENCE](https://www.3ds.com/products/catia) - Dassault Systèmes AI capabilities for geometry assistance and platform knowledge workflows.
+- [Siemens Designcenter NX AI](https://www.siemens.com/en-us/products/designcenter/cad-software/ai/) - AI-enabled NX design: command prediction, performance predictors, and generative/topology workflows.
 
-## Topology Optimization & Lightweighting
+## Generative Design & Topology Optimization
 
-- [nTopology](https://ntopology.com/) - Engineering design software for topology optimization, lattice structures, and generative geometry.
-- Native CAD topology optimization tools (Fusion 360, Creo, SolidWorks) - Built-in generative geometry and weight-reduction features.
+Constraint-driven geometry generation and lightweighting (loads, materials, manufacturing methods).
+
+- [Autodesk Fusion Generative Design](https://www.autodesk.com/products/fusion-360/) - Multi-objective generative design inside Fusion (CAD/CAM/CAE), with manufacturing-aware alternatives.
+- [PTC Creo Generative Design](https://www.ptc.com/en/technologies/cad/generative-design) - Creo Generative Topology Optimization (GTO) and Generative Design Extension (GDX) for constraint-driven concepts.
+- [nTop](https://www.ntop.com/) - Field-driven / implicit design for lattices, topology-optimized solids, conformal channels, and AM-ready geometry (formerly nTopology).
+- [Simcenter Inspire](https://www.siemens.com/en-us/products/simcenter/mechanical-simulation/inspire/) - Designer-facing topology optimization and structural concepting (OptiStruct heritage; formerly Altair Inspire).
+- [Ansys GeomAI](https://www.ansys.com/products/ai/geomai) - Learns from reference geometries to explore new concepts; pairs with SimAI / solvers for performance-driven generation.
+- Native CAD topology studies - Built-in lightweighting in Fusion, Creo, SOLIDWORKS Simulation, and NX Topology Optimization.
+
+## Simulation, CAE & Surrogate AI
+
+AI that speeds setup, explores designs in real time, or predicts fields from past CAE data.
+
+- [Ansys SimAI](https://www.ansys.com/products/ai/simai) - Train AI models on legacy simulation results to predict 3D fields for new designs (SimAI Pro desktop / Premium cloud).
+- [Ansys Discovery](https://www.ansys.com/products/3d-design/ansys-discovery) - Real-time structural / thermal / fluid exploration on the GPU, with handoff to Fluent and other flagship solvers.
+- [Simcenter PhysicsAI](https://www.siemens.com/en-us/products/simcenter/engineering-data-science-ai/physicsai/) - Geometric deep learning on CAE data for fast physics predictions across meshes/topologies (ex-Altair PhysicsAI).
+- [Neural Concept](https://www.neuralconcept.com/) - Geometry-aware AI for real-time multiphysics prediction and design-space exploration (strong in aero / thermal use cases).
+- [SimScale](https://www.simscale.com/) - Cloud CAE (FEA/CFD/thermal) with AI-assisted setup and collaboration for design engineers.
+
+## Physics-ML, PINNs & Open Frameworks
+
+Open frameworks for physics-informed and data-driven surrogates — useful when you own the training loop.
+
+- [NVIDIA PhysicsNeMo](https://developer.nvidia.com/physicsnemo) - <span style="color:blue">Open PyTorch framework for PINNs, neural operators, GNNs, and hybrid Physics-ML (CFD, structural, EM examples). (Open source)</span> — [GitHub](https://github.com/NVIDIA/physicsnemo)
+- [DeepXDE](https://deepxde.readthedocs.io/) - <span style="color:blue">Popular library for PINNs and deep learning for PDEs; good teaching / research entry point. (Open source)</span> — [GitHub](https://github.com/lululxvi/deepxde)
 
 ## CAD Search, PDM & Knowledge
 
-- [Leo AI](https://www.getleo.ai/) - Finds geometrically similar parts in your PDM by shape rather than name or part number.
+Reuse validated parts and tribal knowledge instead of reinventing geometry.
+
+- [Leo AI](https://www.getleo.ai/) - Finds geometrically similar parts in your vault/PDM by shape, not only by name or part number.
+- [SOLIDWORKS AURA](https://www.solidworks.com/product/solidworks-design/ai-companions) - Connects designers to company knowledge, 3DSwym content, and documentation inside the design environment.
 
 ## DFM, GD&T & Design Review
 
-- [bananaz](https://www.bananaz.ai/) - Detects geometric changes between CAD revisions and automates DFM checks, GD&T, tolerance analysis, and design inspections.
+Automated drawing/model review, change detection, and manufacturability checks.
+
+- [bananaz](https://www.bananaz.ai/) - AI agents for mechanical design review: CAD/drawing revision diffs, DFM checks, GD&T/tolerance review, and redlines.
+- [CoLab AutoReview](https://www.colabsoftware.com/product/autoreview) - AI design reviews on models and drawings (GD&T, completeness, standards, process-specific DFM) with tracked markups.
 
 ## AI Tools for V&V (Verification and Validation)
 
-- [Monolith AI](https://monolithai.com/) - Machine learning platform for virtual testing that predicts test outcomes and helps validate designs with fewer physical prototypes.
-- [Ansys minerva](https://www.ansys.com/products/digital-twin/ansys-minerva) - AI-assisted simulation process and data management for traceable, auditable verification and validation workflows.
-- [Siemens Simcenter Testlab](https://www.plm.automation.siemens.com/global/en/products/simcenter/simcenter-testlab.html) - AI-driven test data analytics that correlate physical test results with simulation models for validation.
-- [COMSOL Model Manager](https://www.comsol.com/) - Manages, verifies, and version-controls multiphysics simulation models throughout the V&V process.
+ML and SPDM that reduce physical prototypes and keep simulation evidence traceable.
+
+- [Monolith AI](https://www.monolithai.com/) - Machine learning for virtual testing: predict outcomes from past tests/sims and cut physical prototype loops.
+- [Ansys Minerva](https://www.ansys.com/products/connect/ansys-minerva) - Simulation process & data management (SPDM) for traceable, auditable V&V workflows.
+- [Siemens Simcenter Testlab](https://www.siemens.com/en-us/products/simcenter/physical-testing/testlab/) - Physical testing / NVH analytics with correlation paths from test data back to simulation models.
+- [COMSOL Model Manager](https://www.comsol.com/model-manager) - Manages, verifies, and version-controls multiphysics models across the V&V lifecycle.
 
 ## MCP Connectors for CAD/Design Tools
 
-- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - <span style="color:blue">Curated list including official MCP connectors for CAD/design vendors: Autodesk Fusion MCP, Autodesk Fusion Data MCP, the Blender Lab MCP server, and the SketchUp Connector. (Open source)</span>
+Model Context Protocol servers that let AI agents talk to CAD/design apps.
+
+- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/Awesome-Physical-Engineering-AI) - <span style="color:blue">Curated list including MCP connectors for CAD/design vendors (e.g. Autodesk Fusion MCP / Data MCP, Blender Lab MCP, SketchUp Connector). (Open source)</span>
 
 ## General Awesome Lists
 
-- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/awesome-engineering-ai) - <span style="color:blue">A curated list of AI tools for hardware engineering — CAD, simulation, manufacturing, and beyond. (Open source)</span>
-- [awesome-mechanical-engineering](https://github.com/awesomelistsio/awesome-mechanical-engineering) - <span style="color:blue">A curated list of tools, platforms, resources, and educational content for Mechanical Engineering. (Open source)</span>
+- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/Awesome-Physical-Engineering-AI) - <span style="color:blue">AI tools for hardware engineering — CAD, simulation, manufacturing, and beyond. (Open source)</span>
+- [awesome-ai-cae](https://github.com/kimimgo/awesome-ai-cae) - <span style="color:blue">AI-callable CAE/CAD tooling and related resources. (Open source)</span>
+- [awesome-cad-cae](https://github.com/shvyac/awesome-cad-cae) - <span style="color:blue">CAD/CAE apps, kernels, FEA/CFD, topology optimization, and TAC tooling. (Open source)</span>
+- [awesome-mechanical-engineering](https://github.com/awesomelistsio/awesome-mechanical-engineering) - <span style="color:blue">Broader mechanical-engineering tools, platforms, and learning resources. (Open source)</span>
 
 ## V&V Tools for Automotive Development
 
@@ -104,10 +142,11 @@ Open-source projects targeting the same vehicle-to-component V-model decompositi
 - [CARLA](https://github.com/carla-simulator/carla) + [ASAM OpenSCENARIO/OpenDRIVE](https://github.com/esmini/esmini) - <span style="color:blue">Open-source autonomous-driving simulator and scenario standards for rolling up component/scenario-level test results into whole-vehicle validation. (Open source)</span>
 - [openMDM](https://openmdm.org/) - <span style="color:blue">Eclipse Foundation open-source kit of components and concepts, built on the ASAM ODS standard, for composing measured/test data management systems used to exchange and trace test and validation data across the V-model. (Open source)</span>
 
-
 ## Contributing
 
 Contributions welcome! Please open a pull request to add a tool, fix a broken link, or suggest a new category.
+
+Prefer **durable official / docs URLs**, short blurbs, and tools that are shipping (not vaporware). Mark open-source entries clearly.
 
 ## License
 
