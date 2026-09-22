@@ -2,9 +2,24 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-機械工学向けのAI搭載ツール、コパイロット、プラットフォームのキュレーションリストです。CAD、CAE/シミュレーション、ジェネレーティブデザイン、トポロジー最適化、デザインレビュー、Physics-MLサロゲート、製造考慮ワークフロー、V&Vをカバーします。
+**機械設計ワークフロー向けのAIコパイロットとプラットフォーム** — 商用CADアシスタント、ジェネレーティブデザイン、CAEサロゲート、DFMレビュー、V&Vまで。エージェント呼び出し可能なOSSだけに限定しません。
+
+**対象範囲:** 機械エンジニア向けに、**CAD → CAE → レビュー → V&V** にわたる商用＋オープンツール。
 
 [English](README.md)
+
+## まずはここから
+
+| やりたいこと | 向かう先 |
+| --- | --- |
+| CADでモデリングを速くしたい | [CADコパイロット & Text-to-CAD](#cadコパイロット--text-to-cad) |
+| 形状探索・軽量化 | [ジェネレーティブデザイン & トポロジー最適化](#ジェネレーティブデザイン--トポロジー最適化) |
+| What-if物理を速く回したい | [シミュレーション、CAE & サロゲートAI](#シミュレーションcae--サロゲートai) |
+| 自前でPhysics-MLを学習したい | [Physics-ML、PINNs & オープンフレームワーク](#physics-mlpinns--オープンフレームワーク) |
+| 部品・ナレッジを再利用したい | [CAD検索、PDM & ナレッジ](#cad検索pdm--ナレッジ) |
+| 図面・DFMをチェックしたい | [DFM、GD&T & デザインレビュー](#dfmgdt--デザインレビュー) |
+| 試験とシミュレーションを追跡したい | [V&V（検証・妥当性確認）](#vv検証妥当性確認) |
+| エージェント / MCPコネクタ | [MCP & エージェントツール](#mcp--エージェントツール) |
 
 ## 目次
 
@@ -14,140 +29,121 @@
 - [Physics-ML、PINNs & オープンフレームワーク](#physics-mlpinns--オープンフレームワーク)
 - [CAD検索、PDM & ナレッジ](#cad検索pdm--ナレッジ)
 - [DFM、GD&T & デザインレビュー](#dfmgdt--デザインレビュー)
-- [V&V(検証・妥当性確認)向けAIツール](#vv検証妥当性確認向けaiツール)
-- [CAD/デザインツール向けMCPコネクタ](#caddデザインツール向けmcpコネクタ)
-- [その他のAwesomeリスト](#その他のawesomeリスト)
-- [自動車開発システム向けV&Vツール](#自動車開発システム向けvvツール)
-  - [ASAM ODSエコシステム - 主要メンバー & 製品](#asam-odsエコシステム---主要メンバー--製品)
-  - [AI支援による大規模V&V(車両~部品、L0-L3)](#ai支援による大規模vv車両部品l0-l3)
+- [V&V（検証・妥当性確認）](#vv検証妥当性確認)
+- [MCP & エージェントツール](#mcp--エージェントツール)
+- [関連Awesomeリスト](#関連awesomeリスト)
+- [自動車V&V（深掘り）](#自動車vv深掘り)
 - [コントリビューション](#コントリビューション)
+- [ライセンス](#ライセンス)
 
 ---
 
 ## CADコパイロット & Text-to-CAD
 
-MCAD内(または隣接)でモデリングを加速する自然言語アシスタントとText-to-CAD。
+MCAD内（または隣接）でモデリングを加速する自然言語アシスタントとText-to-CAD。
 
-- [SOLIDWORKS AI Virtual Companions (AURA & LEO)](https://www.solidworks.com/product/solidworks-design/ai-companions) - アプリ内AIコンパニオン。AURAは社内/Webナレッジ、LEOは会話型の設計支援(図面・アセンブリ・フィーチャツリー)。
-- [Creo AI Assistant](https://support.ptc.com/help/creo/creo_ai/usascii/ai_assistant/overview.html) - ドキュメント参照、モデル文脈のQ&A、CAD作業支援を行うPTCのCreo向けアシスタント。
-- [Autodesk Assistant in Inventor](https://help.autodesk.com/view/INVNTOR/2027/ENU/?guid=ABOUT-AUTODESK-ASSISTANT-INVENTOR) - Inventor向けAutodesk Assistantアドイン。自然言語ヘルプ、モデル照会、タスク自動化。
-- [MecAgent](https://mecagent.com/) - SOLIDWORKS & Inventor向けAI CADコパイロット。Text-to-マクロ、図面自動化、工学Q&A、実験的なText-to-STEP/STL。
-- [Zoo Design Studio (Zookeeper)](https://zoo.dev/) - 会話型Text-to-CADを備えたAIネイティブCAD(編集可能なB-rep / KCL)。[ドキュメント](https://zoo.dev/docs)。
-- [Leo AI](https://www.getleo.ai/) - 機械CAD向けジェネレーティブAI。仕様/スケッチからのアセンブリ生成と形状ベースのパーツ検索。
-- [CATIA / 3DEXPERIENCE](https://www.3ds.com/products/catia) - ジオメトリ支援とプラットフォーム知識ワークフロー向けのDassault Systèmes AI機能。
-- [Siemens Designcenter NX AI](https://www.siemens.com/en-us/products/designcenter/cad-software/ai/) - AI対応のNX設計。コマンド予測、性能予測、ジェネレーティブ/トポロジーワークフロー。
+- [SOLIDWORKS AI Companions (AURA & LEO)](https://www.solidworks.com/product/solidworks-design/ai-companions) — アプリ内コンパニオン。AURAは社内/Webナレッジ、LEOは会話型の設計支援。Tags: `Commercial`
+- [Creo AI Assistant](https://support.ptc.com/help/creo/creo_ai/usascii/ai_assistant/overview.html) — Creo内でのドキュメント参照、モデル文脈Q&A、CAD作業支援。Tags: `Commercial`
+- [Autodesk Assistant in Inventor](https://help.autodesk.com/view/INVNTOR/2027/ENU/?guid=ABOUT-AUTODESK-ASSISTANT-INVENTOR) — Inventor向け自然言語ヘルプ、モデル照会、タスク自動化。Tags: `Commercial`
+- [MecAgent](https://mecagent.com/) — SOLIDWORKS & Inventor向けコパイロット。Text-to-マクロ、図面自動化、工学Q&A、実験的Text-to-STEP/STL。Tags: `Commercial`
+- [Zoo Design Studio](https://zoo.dev/) — 会話型Text-to-CADを備えたAIネイティブCAD（編集可能なB-rep / KCL）。Tags: `Commercial`
+- [Leo AI](https://www.getleo.ai/) — 仕様/スケッチからのアセンブリ生成と、ボルト内の形状ベース部品検索。Tags: `Commercial`
+- [CATIA / 3DEXPERIENCE](https://www.3ds.com/products/catia) — ジオメトリ支援とプラットフォーム知識ワークフロー向けDassault AI。Tags: `Commercial`
+- [Siemens NX AI](https://www.siemens.com/en-us/products/designcenter/cad-software/ai/) — NXのコマンド予測、性能予測、ジェネレーティブ/トポロジー。Tags: `Commercial`
 
 ## ジェネレーティブデザイン & トポロジー最適化
 
 荷重・材料・製法制約に基づく形状生成と軽量化。
 
-- [Autodesk Fusion Generative Design](https://www.autodesk.com/products/fusion-360/) - Fusion内の多目的ジェネレーティブデザイン(CAD/CAM/CAE一体、製造制約付き代替案)。
-- [PTC Creo Generative Design](https://www.ptc.com/en/technologies/cad/generative-design) - Creo Generative Topology Optimization (GTO) と Generative Design Extension (GDX)。
-- [nTop](https://www.ntop.com/) - ラティス、トポロジー最適化ソリッド、共形流路、AM向け形状のためのフィールド駆動/陰関数設計(旧nTopology)。
-- [Simcenter Inspire](https://www.siemens.com/en-us/products/simcenter/mechanical-simulation/inspire/) - 設計者向けトポロジー最適化と構造コンセプト検討(OptiStruct系、旧Altair Inspire)。
-- [Ansys GeomAI](https://www.ansys.com/products/ai/geomai) - 参照形状から学習して新コンセプトを探索。SimAI/ソルバーと組み合わせて性能駆動の生成も可能。
-- ネイティブCADトポロジー機能 - Fusion、Creo、SOLIDWORKS Simulation、NX Topology Optimizationなどの組み込み軽量化。
+- [Autodesk Fusion Generative Design](https://www.autodesk.com/products/fusion-360/) — Fusion内の多目的ジェネレーティブデザイン（製造制約付き代替案）。Tags: `Commercial`
+- [PTC Creo Generative Design](https://www.ptc.com/en/technologies/cad/generative-design) — Creo GTO / GDXによる制約駆動のコンセプト探索。Tags: `Commercial`
+- [nTop](https://www.ntop.com/) — ラティス、トポロジーソリッド、共形流路、AM向け形状のフィールド駆動/陰関数設計。Tags: `Commercial`
+- [Simcenter Inspire](https://www.siemens.com/en-us/products/simcenter/mechanical-simulation/inspire/) — 設計者向けトポロジー最適化と構造コンセプト検討。Tags: `Commercial`
+- [Ansys GeomAI](https://www.ansys.com/products/ai/geomai) — 参照形状から学習してコンセプト探索。SimAI/ソルバーと連携。Tags: `Commercial`
+- ネイティブCADトポロジー機能 — Fusion、Creo、SOLIDWORKS Simulation、NX Topology Optimizationなどの組み込み軽量化。Tags: `Commercial`
 
 ## シミュレーション、CAE & サロゲートAI
 
-セットアップ高速化、リアルタイム探索、過去CAEデータからの場予測。
+セットアップ高速化、リアルタイムWhat-if、過去CAEデータからの場予測。
 
-- [Ansys SimAI](https://www.ansys.com/products/ai/simai) - 既存シミュレーション結果でAIを学習し、新設計の3D場を予測(SimAI Proデスクトップ / Premiumクラウド)。
-- [Ansys Discovery](https://www.ansys.com/products/3d-design/ansys-discovery) - GPU上でのリアルタイム構造/熱/流体探索。Fluentなど本格ソルバーへの引き継ぎも。
-- [Simcenter PhysicsAI](https://www.siemens.com/en-us/products/simcenter/engineering-data-science-ai/physicsai/) - CAEデータ上の幾何深層学習による高速物理予測(旧Altair PhysicsAI)。
-- [Neural Concept](https://www.neuralconcept.com/) - 形状ベースのAIによるリアルタイムマルチフィジックス予測と設計空間探索(空力/熱に強み)。
-- [SimScale](https://www.simscale.com/) - AI支援セットアップ付きのクラウドCAE(FEA/CFD/熱)で設計エンジニア向けコラボ。
+- [Ansys SimAI](https://www.ansys.com/products/ai/simai) — 既存シミュレーション結果で学習し、新設計の3D場を予測。Tags: `Commercial`
+- [Ansys Discovery](https://www.ansys.com/products/3d-design/ansys-discovery) — GPU上のリアルタイム構造/熱/流体探索。本格ソルバーへの引き継ぎも。Tags: `Commercial`
+- [Simcenter PhysicsAI](https://www.siemens.com/en-us/products/simcenter/engineering-data-science-ai/physicsai/) — CAEデータ上の幾何深層学習による高速物理予測。Tags: `Commercial`
+- [Neural Concept](https://www.neuralconcept.com/) — 形状ベースAIによるリアルタイムマルチフィジックス予測と設計空間探索。Tags: `Commercial`
+- [SimScale](https://www.simscale.com/) — AI支援セットアップ付きクラウドFEA/CFD/熱解析。Tags: `Commercial`
 
 ## Physics-ML、PINNs & オープンフレームワーク
 
-自前で学習ループを回すときのオープンな物理情報・データ駆動サロゲート。
+学習ループを自前で回すときのオープンなPINNs / ニューラル演算子 / ハイブリッドPhysics-ML。
 
-- [NVIDIA PhysicsNeMo](https://developer.nvidia.com/physicsnemo) - <span style="color:blue">PINNs、ニューラル演算子、GNN、ハイブリッドPhysics-ML向けのオープンなPyTorchフレームワーク(CFD・構造・EM例あり)。(オープンソース)</span> — [GitHub](https://github.com/NVIDIA/physicsnemo)
-- [DeepXDE](https://deepxde.readthedocs.io/) - <span style="color:blue">PINNsやPDE向け深層学習の定番ライブラリ。教育・研究の入口に適する。(オープンソース)</span> — [GitHub](https://github.com/lululxvi/deepxde)
+- [NVIDIA PhysicsNeMo](https://developer.nvidia.com/physicsnemo) — PINNs、ニューラル演算子、GNN、ハイブリッドPhysics-ML向けPyTorchフレームワーク（[GitHub](https://github.com/NVIDIA/physicsnemo)）。Tags: `OSS`
+- [DeepXDE](https://deepxde.readthedocs.io/) — PINNs / PDE向け深層学習の定番ライブラリ。教育・研究の入口に適する（[GitHub](https://github.com/lululxvi/deepxde)）。Tags: `OSS`
 
 ## CAD検索、PDM & ナレッジ
 
 新規形状を作る前に、検証済み部品と社内知を再利用。
 
-- [Leo AI](https://www.getleo.ai/) - 名前や部品番号だけでなく形状でPDM/ボルト内の類似パーツを検索。
-- [SOLIDWORKS AURA](https://www.solidworks.com/product/solidworks-design/ai-companions) - 設計環境内で社内ナレッジ、3DSwym、ドキュメントへ接続。
+- [SOLIDWORKS AURA](https://www.solidworks.com/product/solidworks-design/ai-companions) — 設計環境内で社内ナレッジ、3DSwym、ドキュメントへ接続。Tags: `Commercial`
+- 形状ベースの類似部品検索は [Leo AI](#cadコパイロット--text-to-cad) も参照。
 
 ## DFM、GD&T & デザインレビュー
 
 図面/モデルレビュー、変更検出、製造性チェックの自動化。
 
-- [bananaz](https://www.bananaz.ai/) - 機械設計レビュー向けAIエージェント。CAD/図面リビジョン差分、DFM、GD&T/公差レビュー、赤入れ。
-- [CoLab AutoReview](https://www.colabsoftware.com/product/autoreview) - モデルと図面のAIデザインレビュー(GD&T、完全性、規格、工程別DFM)と追跡可能なマークアップ。
+- [bananaz](https://www.bananaz.ai/) — CAD/図面差分、DFM、GD&T/公差レビュー、赤入れ向けAIエージェント。Tags: `Commercial`
+- [CoLab AutoReview](https://www.colabsoftware.com/product/autoreview) — モデルと図面のAIレビュー（GD&T、完全性、規格、DFM）と追跡可能なマークアップ。Tags: `Commercial`
 
-## V&V(検証・妥当性確認)向けAIツール
+## V&V（検証・妥当性確認）
 
 物理試作を減らし、シミュレーション根拠を追跡可能にするMLとSPDM。
 
-- [Monolith AI](https://www.monolithai.com/) - 仮想テスト向け機械学習。過去の試験/シミュレーションから結果を予測し、物理プロトタイプを削減。
-- [Ansys Minerva](https://www.ansys.com/products/connect/ansys-minerva) - 追跡可能・監査可能なV&Vのためのシミュレーションプロセス&データ管理(SPDM)。
-- [Siemens Simcenter Testlab](https://www.siemens.com/en-us/products/simcenter/physical-testing/testlab/) - 物理試験/NVH解析と、試験データからシミュレーションモデルへの相関。
-- [COMSOL Model Manager](https://www.comsol.com/model-manager) - V&Vライフサイクル全体でマルチフィジックスモデルを管理・検証・バージョン管理。
+- [Monolith AI](https://www.monolithai.com/) — 仮想テスト向けML。過去の試験/シミュレーションから結果を予測し試作ループを縮小。Tags: `Commercial`
+- [Ansys Minerva](https://www.ansys.com/products/connect/ansys-minerva) — 追跡・監査可能なシミュレーションV&V向けSPDM。Tags: `Commercial`
+- [Siemens Simcenter Testlab](https://www.siemens.com/en-us/products/simcenter/physical-testing/testlab/) — 物理試験/NVH解析と試験↔シミュレーション相関。Tags: `Commercial`
+- [COMSOL Model Manager](https://www.comsol.com/model-manager) — V&Vライフサイクル全体でマルチフィジックスモデルを版管理・検証。Tags: `Commercial`
 
-## CAD/デザインツール向けMCPコネクタ
+## MCP & エージェントツール
 
-AIエージェントがCAD/デザインアプリと対話するためのModel Context Protocolサーバー。
+CAD/CAEアプリと対話するエージェント向けの短いポインタ。本リストは**機械設計ワークフロー優先**（商用含む）。OSSのエージェント呼び出し可能性ランキングは [awesome-ai-cae](https://github.com/kimimgo/awesome-ai-cae) を参照。
 
-- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/Awesome-Physical-Engineering-AI) - <span style="color:blue">CAD/デザインベンダー向けMCPコネクタ(Autodesk Fusion MCP / Data MCP、Blender Lab MCP、SketchUpコネクタなど)を含むキュレーションリスト。(オープンソース)</span>
+- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/Awesome-Physical-Engineering-AI) — CAD/デザイン向けMCPコネクタ等のキュレーション（Fusion MCP、Blender Lab MCP、SketchUpなど）。Tags: `OSS`
+- [awesome-ai-cae](https://github.com/kimimgo/awesome-ai-cae) — エージェント呼び出し可能なOSS CAE/CADスタック（MCP / Python / CLI）とレディネス評価。Tags: `OSS`
 
-## その他のAwesomeリスト
+## 関連Awesomeリスト
 
-- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/Awesome-Physical-Engineering-AI) - <span style="color:blue">ハードウェアエンジニアリング向けAIツール(CAD、シミュレーション、製造など)。(オープンソース)</span>
-- [awesome-ai-cae](https://github.com/kimimgo/awesome-ai-cae) - <span style="color:blue">AI呼び出し可能なCAE/CADツール関連リソース。(オープンソース)</span>
-- [awesome-cad-cae](https://github.com/shvyac/awesome-cad-cae) - <span style="color:blue">CAD/CAEアプリ、カーネル、FEA/CFD、トポロジー最適化、TACツール。(オープンソース)</span>
-- [awesome-mechanical-engineering](https://github.com/awesomelistsio/awesome-mechanical-engineering) - <span style="color:blue">機械工学向けのより広いツール、プラットフォーム、学習リソース。(オープンソース)</span>
+- [awesome-ai-cae](https://github.com/kimimgo/awesome-ai-cae) — AI呼び出し可能なCAE/CADツールとエージェントレディネス。Tags: `OSS`
+- [awesome-cad-cae](https://github.com/shvyac/awesome-cad-cae) — CAD/CAEアプリ、カーネル、FEA/CFD、トポロジー最適化。Tags: `OSS`
+- [awesome-open-source-solvers](https://github.com/shvyac/awesome-open-source-solvers) — オープンなFEM/CFD/MBD/粒子ソルバーと科学計算スタック。Tags: `OSS`
+- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/Awesome-Physical-Engineering-AI) — ハードウェアエンジニアリング向けAI（CAD、シミュレーション、製造）。Tags: `OSS`
+- [awesome-mechanical-engineering](https://github.com/awesomelistsio/awesome-mechanical-engineering) — より広い機械工学ツール、プラットフォーム、学習リソース。Tags: `OSS`
 
-## 自動車開発システム向けV&Vツール
+## 自動車V&V（深掘り）
 
-- [dSPACE SCALEXIO / ASM](https://www.dspace.com/) - ECUソフトウェアと車両ダイナミクスを検証するためのHIL(Hardware-in-the-Loop)テストシステムとシミュレーションモデル。
-- [Vector CANoe](https://www.vector.com/int/en/products/products-a-z/software/canoe/) - 自動車のVモデル全体でECUおよびネットワークの開発、テスト、解析を行うツール。
-- [National Instruments VeriStand](https://www.ni.com/en/shop/veristand.html) - HILシミュレーション、モデル検証、迅速な制御プロトタイピングのためのリアルタイムテストソフトウェア。
-- [MathWorks Simulink Test & Requirements Toolbox](https://www.mathworks.com/products/simulink-test.html) - 要求のトレーサビリティを管理し、Simulinkモデルのテストケースに対する検証を自動化。
-- [ETAS LABCAR](https://www.etas.com/en/products/labcar.php) - 実際の動作条件下で自動車ECUを検証するHILテスト環境。
-- [ASAM ODS (Open Data Services)](https://www.asam.net/standards/detail/ods/) - 欧州の試験データ管理標準で、Vモデル全体にわたる計測・シミュレーション・妥当性確認データの保存と交換を規定。
+車両HIL / ECU V&V向けの短い任意セクション。自動車の制御・試験でなければスキップして問題ありません。
 
-#### ASAM ODSエコシステム - 主要メンバー & 製品
+### HIL & テストツール
 
-ASAM ODSベースの試験データ管理製品を開発・保守する主要なASAM e.V.加盟企業。
+- [dSPACE SCALEXIO / ASM](https://www.dspace.com/) — HILシステムと車両/ECUシミュレーションモデル。Tags: `Commercial`
+- [Vector CANoe](https://www.vector.com/int/en/products/products-a-z/software/canoe/) — ECU・ネットワークの開発、テスト、解析。Tags: `Commercial`
+- [NI VeriStand](https://www.ni.com/en/shop/veristand.html) — リアルタイムHIL、モデル検証、迅速な制御プロトタイピング。Tags: `Commercial`
+- [MathWorks Simulink Test](https://www.mathworks.com/products/simulink-test.html) — 要求トレーサビリティとモデル検証の自動化。Tags: `Commercial`
+- [ETAS LABCAR](https://www.etas.com/en/products/labcar.php) — 実運用条件に近いECU妥当性確認向けHIL。Tags: `Commercial`
+- [ASAM ODS](https://www.asam.net/standards/detail/ods/) — 計測・シミュレーション・妥当性確認データの交換標準。Tags: `Commercial`
 
-- [Peak Solution](https://www.peak-solution.com/) - ASAM ODSワーキンググループの活発な貢献企業。プラットフォーム非依存のASAM ODSサーバー[Peak ODS Server (PODS)](https://www.asam.net/members/product-directory/detail/peak-ods-server/)を開発し、openMDMの主要コントリビューターでもある。
-- [AVL](https://www.avl.com/) - パワートレインおよび車両の試験データ管理にASAM ODSを対応させた[AVL CONCERTO](https://www.avl.com/)データ解析プラットフォームを提供するOEM/Tier-1試験機器サプライヤー。
-- [Vector Informatik](https://www.vector.com/) - ASAM ODSベースのデータ管理・交換機能を備えた計測・キャリブレーションツール(CANape、vSignalyzerなど)を提供するASAM加盟企業。
-- [Robert Bosch GmbH](https://www.bosch.com/) - 自動車試験データ管理におけるASAM ODSの要件・ユースケースに貢献するOEM/Tier-1のASAM加盟企業。
-- [HighQSoft](https://www.highqsoft.com/) - 試験データ管理システム向けのASAM ODSコンサルティング、データモデル設計、統合サービスを提供するASAM加盟企業。
-- [MBBM-VAS](https://www.mbbm-vas.com/) - 計測・試験データ向けの[ASAM ODS & openMDMベースの](https://www.mbbm-vas.com/en/products/data-management/asam-ods)データ管理製品を提供するASAM加盟企業。
+ODSエコシステムへのポインタ（網羅カタログではありません）: [Peak ODS Server](https://www.peak-solution.com/)、[openMDM](https://openmdm.org/)、[AVL CONCERTO](https://www.avl.com/)。
 
-### AI支援による大規模V&V(車両~部品、L0-L3)
+### オープンソースMBSE / シナリオ（少数）
 
-自動車のVモデル全体を支援するツール群です。左側では車両全体(L0)からシステム(L1)、サブシステム(L2)、部品/コンポーネント(L3)へと要求を分解し、右側では部品レベル(L3)の試験結果を車両全体(L0)の妥当性確認へと積み上げます。
-
-- [Siemens Polarion + Capital](https://www.plm.automation.siemens.com/global/en/products/polarion/) - 車両、システム、サブシステム、部品の各レベルにわたるエンドツーエンドのトレーサビリティを実現するAI支援の要求管理とインパクト分析。
-- [PTC Codebeamer X](https://www.ptc.com/en/products/codebeamer) - Vモデル階層全体にわたる要求分解、カバレッジ分析、テストトレーサビリティをAIで支援。
-- [Vector PREEvision](https://www.vector.com/int/en/products/products-a-z/software/preevision/) - 車両レベルの要求をシステム、サブシステム、部品の仕様に分解し、V&Vの積み上げのためのトレーサビリティを提供するE/Eシステムエンジニアリングツール。
-- [IBM Engineering Lifecycle Management (ELM) with watsonx](https://www.ibm.com/products/engineering-lifecycle-management) - 車両レベルから部品レベルの成果物にまたがる要求分析、変更影響分析、検証トレーサビリティをAIで支援。
-- [Ansys medini analyze](https://www.ansys.com/products/safety-analysis/ansys-medini-analyze) - システムレベルのハザードと部品レベルの検証エビデンスを関連付けるモデルベースの安全性・要求分析。
-
-#### オープンソースの代替
-
-車両~部品レベルのVモデル分解と妥当性確認の積み上げという同じ目標を持つオープンソースプロジェクト。
-
-- [Eclipse Capella](https://github.com/eclipse-capella/capella) - <span style="color:blue">Arcadiaメソッドを実装したオープンソースのMBSEツールで、運用・システム・論理・物理レベル(L0-L3)にわたるシステムアーキテクチャの分解を支援。(オープンソース)</span>
-- [Eclipse SCORE](https://github.com/eclipse-score/score) - <span style="color:blue">Boschが主導するソフトウェア定義車両向けオープンソースプラットフォームで、車両ソフトウェアスタック全体の要求、アーキテクチャ、V&Vツールを含む。(オープンソース)</span>
-- [OpenMBEE](https://github.com/Open-MBEE) - <span style="color:blue">NASA JPLによるオープンソースのモデルベースシステムズエンジニアリング環境で、システムから部品レベルまでの要求とアーキテクチャのトレーサビリティを管理。(オープンソース)</span>
-- [Eclipse ProR](https://github.com/eclipse-rmf/org.eclipse.rmf) - <span style="color:blue">ReqIFベースのオープンソース要求管理・トレーサビリティツールで、システムレベル間の要求と検証エビデンスを関連付け。(オープンソース)</span>
-- [CARLA](https://github.com/carla-simulator/carla) + [ASAM OpenSCENARIO/OpenDRIVE](https://github.com/esmini/esmini) - <span style="color:blue">部品/シナリオレベルの試験結果を車両全体の妥当性確認に積み上げるためのオープンソース自動運転シミュレータとシナリオ標準。(オープンソース)</span>
-- [openMDM](https://openmdm.org/) - <span style="color:blue">ASAM ODS標準をベースにしたEclipse Foundationのオープンソースコンポーネント/コンセプト群で、Vモデル全体にわたる試験・計測・妥当性確認データを管理・交換するシステムを構築できる。(オープンソース)</span>
+- [Eclipse Capella](https://github.com/eclipse-capella/capella) — システムレベル間のアーキテクチャ分解向けArcadia MBSE。Tags: `OSS`
+- [CARLA](https://github.com/carla-simulator/carla) + [esmini / OpenSCENARIO](https://github.com/esmini/esmini) — シナリオレベルV&V向けオープン運転シミュレータとシナリオ標準。Tags: `OSS`
+- [openMDM](https://openmdm.org/) — ASAM ODSベースの試験データ管理向けEclipseコンポーネント。Tags: `OSS`
 
 ## コントリビューション
 
-コントリビューションを歓迎します!ツールの追加、リンク切れの修正、新しいカテゴリの提案などは、プルリクエストを開いてください。
+コントリビューション歓迎です。ツール追加、リンク修正、カテゴリ提案はPRを開いてください。
 
-**公式/ドキュメントの耐久性のあるURL**、短い説明、実出荷されているツールを優先してください(vaporwareは避けて)。オープンソースは明示してください。
+**公式/ドキュメントの耐久性のあるURL**、一文の短い説明、実出荷ツールを優先。各エントリに `Commercial` または `OSS` を付けてください。ENとJAのREADMEは同期を保ってください。
 
 ## ライセンス
 
-[LICENSE](LICENSE)を参照してください。
+[LICENSE](LICENSE) を参照してください。
