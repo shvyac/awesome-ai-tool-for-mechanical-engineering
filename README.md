@@ -70,6 +70,7 @@ Constraint-driven geometry and lightweighting (loads, materials, manufacturing m
 
 Faster setup, real-time what-if exploration, or field prediction from past CAE data.
 
+- [AgentFEM](https://haoming-luo.github.io/agentfem/) — AI-agent-ready finite-element workflows with editable Python models, pre-run checks, numerical solves, and inspectable results, using a local FEniCSx-based runtime ([GitHub](https://github.com/haoming-luo/agentfem)). Tags: `OSS`
 - [Ansys SimAI](https://www.ansys.com/products/ai/simai) — Train on legacy simulation results to predict 3D fields for new designs; offered as SimAI Pro and SimAI Premium. Tags: `Commercial`
 - [Ansys Discovery](https://ansys.synopsys.com/products/3d-design/ansys-discovery) — Real-time structural / thermal / fluid exploration on GPU, with handoff to flagship solvers (Ansys is now part of Synopsys). Tags: `Commercial`
 - [Simcenter PhysicsAI](https://www.siemens.com/en-us/products/simcenter/engineering-data-science-ai/physicsai/) — Geometric deep learning on CAE data for fast physics across meshes/topologies. Tags: `Commercial`

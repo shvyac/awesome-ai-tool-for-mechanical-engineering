@@ -70,6 +70,7 @@ MCAD内（または隣接）でモデリングを加速する自然言語アシ�
 
 セットアップ高速化、リアルタイムWhat-if、過去CAEデータからの場予測。
 
+- [AgentFEM](https://haoming-luo.github.io/agentfem/) — ローカルのFEniCSx実行環境で、AIエージェントによる編集可能なPythonモデルの作成、計算前の設定確認、有限要素計算、結果の確認を支援（[GitHub](https://github.com/haoming-luo/agentfem)）。Tags: `OSS`
 - [Ansys SimAI](https://www.ansys.com/products/ai/simai) — 既存シミュレーション結果で学習し、新設計の3D場を予測。SimAI Pro / SimAI Premiumの2プラン。Tags: `Commercial`
 - [Ansys Discovery](https://ansys.synopsys.com/products/3d-design/ansys-discovery) — GPU上のリアルタイム構造/熱/流体探索。本格ソルバーへの引き継ぎも（AnsysはSynopsys傘下）。Tags: `Commercial`
 - [Simcenter PhysicsAI](https://www.siemens.com/en-us/products/simcenter/engineering-data-science-ai/physicsai/) — CAEデータ上の幾何深層学習による高速物理予測。Tags: `Commercial`
