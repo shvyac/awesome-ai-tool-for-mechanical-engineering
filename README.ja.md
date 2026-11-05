@@ -6,7 +6,7 @@
 
 **対象範囲:** 機械エンジニア向けに、**CAD → CAE → レビュー → V&V** にわたる商用＋オープンツール。
 
-⭐ バッジは GitHub のスター数をリアルタイム表示します(shields.io)。リリースバッジは最新リリースの版数と日付を表示します。
+⭐ バッジは GitHub のスター数をリアルタイム表示します(shields.io)。release バッジは GitHub の最新リリース日(YYYY/MM/DD、最終更新時点)を示します。last commit バッジは最新コミット日をリアルタイム表示します(shields.io)。
 
 [English](README.md)
 
@@ -52,6 +52,7 @@ MCAD内（または隣接）でモデリングを加速する自然言語アシ�
 - [Zoo Design Studio](https://zoo.dev/) — Zookeeperエージェントによる会話型Text-to-CADを備えたAIネイティブCAD（編集可能なB-rep / KCL）。Tags: `Commercial`
 - [Leo AI](https://www.getleo.ai/) — 仕様/スケッチからのアセンブリ生成と、ボルト内の形状ベース部品検索。Tags: `Commercial`
 - [Adam](https://adam.new/) — ハードウェアチーム向けAI CADコパイロット（YC）。SlackやメールでOnshape、Fusion、SOLIDWORKSの作業を依頼すると、ブランチ上のモデル編集、BOM、図面、サプライヤー見積を返す。Tags: `Commercial`
+- [Backflip AI](https://www.backflip.ai/) ![New](https://img.shields.io/badge/-NEW-red?style=flat) — スキャンからCADへのコパイロット。基盤モデルが3Dスキャン、STLなどのメッシュをフィーチャーツリー付きの編集可能なパラメトリックCADに変換し、テキスト/写真による部品検索も備える。Autodesk FusionアドインとSTEP出力のWebアプリ（2026年8月リリース）。Tags: `Commercial`
 - [CATIA / 3DEXPERIENCE](https://www.3ds.com/products/catia) — ジオメトリ支援とプラットフォーム知識ワークフロー向けDassault AI。Tags: `Commercial`
 - [Siemens NX AI](https://www.siemens.com/en-us/products/designcenter/cad-software/ai/) — NXのコマンド予測、性能予測、ジェネレーティブ/トポロジー（現在はSiemens Designcenterの一部）。Tags: `Commercial`
 
@@ -73,17 +74,18 @@ MCAD内（または隣接）でモデリングを加速する自然言語アシ�
 - [Ansys SimAI](https://www.ansys.com/products/ai/simai) — 既存シミュレーション結果で学習し、新設計の3D場を予測。SimAI Pro / SimAI Premiumの2プラン。Tags: `Commercial`
 - [Ansys Discovery](https://ansys.synopsys.com/products/3d-design/ansys-discovery) — GPU上のリアルタイム構造/熱/流体探索。本格ソルバーへの引き継ぎも（AnsysはSynopsys傘下）。Tags: `Commercial`
 - [Simcenter PhysicsAI](https://www.siemens.com/en-us/products/simcenter/engineering-data-science-ai/physicsai/) — CAEデータ上の幾何深層学習による高速物理予測。Tags: `Commercial`
-- [Neural Concept](https://www.neuralconcept.com/) — 形状ベースAIによるリアルタイムマルチフィジックス予測と設計空間探索。Tags: `Commercial`
+- [Neural Concept](https://www.neuralconcept.com/) — 形状ベースAIによるリアルタイムマルチフィジックス予測と設計空間探索。AI Design Copilot（CES 2026）はテキストから設計バリエーションを生成し、自社ソルバーの結果で最適化ループを回す。Tags: `Commercial`
 - [PhysicsX](https://www.physicsx.ai/) — シミュレーション、Physics AI、データを統合したAIネイティブなエンジニアリング基盤。設計・製造・運用をカバー。Tags: `Commercial`
 - [Luminary](https://luminary.ai/) — 「Large Physics Models」を学習・展開するPhysics AIプラットフォーム（旧Luminary Cloud）。流れ・構造・熱を1秒未満で予測。Tags: `Commercial`
+- [Synera](https://www.synera.io/) ![New](https://img.shields.io/badge/-NEW-red?style=flat) — エージェント型エンジニアリング基盤。既存のCAD/CAEツールをまたいで設計→解析→反復のワークフローをAIエージェントで自動化（2026年にNVIDIAとシミュレーションエージェントを開発）。Tags: `Commercial`
 - [SimScale](https://www.simscale.com/) — AI支援セットアップ付きクラウドFEA/CFD/熱解析。Tags: `Commercial`
 
 ## Physics-ML、PINNs & オープンフレームワーク
 
 学習ループを自前で回すときのオープンなPINNs / ニューラル演算子 / ハイブリッドPhysics-ML。
 
-- [NVIDIA PhysicsNeMo](https://developer.nvidia.com/physicsnemo) ![GitHub stars](https://img.shields.io/github/stars/NVIDIA/physicsnemo?style=flat&label=%E2%AD%90) ![GitHub release](https://img.shields.io/github/v/release/NVIDIA/physicsnemo?style=flat&label=release) ![GitHub release date](https://img.shields.io/github/release-date/NVIDIA/physicsnemo?style=flat&label=released) — PINNs、ニューラル演算子、GNN、ハイブリッドPhysics-ML向けPyTorchフレームワーク（[GitHub](https://github.com/NVIDIA/physicsnemo)）。Tags: `OSS`
-- [DeepXDE](https://deepxde.readthedocs.io/) ![GitHub stars](https://img.shields.io/github/stars/lululxvi/deepxde?style=flat&label=%E2%AD%90) ![GitHub release](https://img.shields.io/github/v/release/lululxvi/deepxde?style=flat&label=release) ![GitHub release date](https://img.shields.io/github/release-date/lululxvi/deepxde?style=flat&label=released) — PINNs / PDE向け深層学習の定番ライブラリ。教育・研究の入口に適する（[GitHub](https://github.com/lululxvi/deepxde)）。Tags: `OSS`
+- [NVIDIA PhysicsNeMo](https://developer.nvidia.com/physicsnemo) ![GitHub stars](https://img.shields.io/github/stars/NVIDIA/physicsnemo?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F09%2F11-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/NVIDIA/physicsnemo?style=flat) — PINNs、ニューラル演算子、GNN、ハイブリッドPhysics-ML向けPyTorchフレームワーク（[GitHub](https://github.com/NVIDIA/physicsnemo)）。Tags: `OSS`
+- [DeepXDE](https://deepxde.readthedocs.io/) ![GitHub stars](https://img.shields.io/github/stars/lululxvi/deepxde?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F11%2F02-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/lululxvi/deepxde?style=flat) — PINNs / PDE向け深層学習の定番ライブラリ。教育・研究の入口に適する（[GitHub](https://github.com/lululxvi/deepxde)）。Tags: `OSS`
 
 ## CAD検索、PDM & ナレッジ
 
@@ -112,19 +114,21 @@ MCAD内（または隣接）でモデリングを加速する自然言語アシ�
 
 CAD/CAEアプリと対話するエージェント向けの短いポインタ。本リストは**機械設計ワークフロー優先**（商用含む）。OSSのエージェント呼び出し可能性ランキングは [awesome-ai-cae](https://github.com/kimimgo/awesome-ai-cae) を参照。
 
-- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/Awesome-Physical-Engineering-AI) ![GitHub stars](https://img.shields.io/github/stars/010zx00x1/Awesome-Physical-Engineering-AI?style=flat&label=%E2%AD%90) — CAD/デザイン向けMCPコネクタ等のキュレーション（Fusion MCP、Blender Lab MCP、SketchUpなど）。Tags: `OSS`
-- [awesome-ai-cae](https://github.com/kimimgo/awesome-ai-cae) ![GitHub stars](https://img.shields.io/github/stars/kimimgo/awesome-ai-cae?style=flat&label=%E2%AD%90) — エージェント呼び出し可能なOSS CAE/CADスタック（MCP / Python / CLI）とレディネス評価。Tags: `OSS`
+- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/Awesome-Physical-Engineering-AI) ![GitHub stars](https://img.shields.io/github/stars/010zx00x1/Awesome-Physical-Engineering-AI?style=flat&label=%E2%AD%90) ![Last commit](https://img.shields.io/github/last-commit/010zx00x1/Awesome-Physical-Engineering-AI?style=flat) — CAD/デザイン向けMCPコネクタ等のキュレーション（Fusion MCP、Blender Lab MCP、SketchUpなど）。Tags: `OSS`
+- [awesome-ai-cae](https://github.com/kimimgo/awesome-ai-cae) ![GitHub stars](https://img.shields.io/github/stars/kimimgo/awesome-ai-cae?style=flat&label=%E2%AD%90) ![Last commit](https://img.shields.io/github/last-commit/kimimgo/awesome-ai-cae?style=flat) — エージェント呼び出し可能なOSS CAE/CADスタック（MCP / Python / CLI）とレディネス評価。Tags: `OSS`
 - [Autodesk Fusion MCP](https://www.autodesk.com/products/fusion-360/blog/introducing-the-fusion-mcp-opening-fusion-to-ai-powered-workflows/) — AIクライアントからFusion内で設計の作成・編集を行う公式MCPサーバー（デスクトップ）と、プロジェクトデータを扱うFusion Data MCP Server。Tags: `Commercial`
 - [Onshape FeatureScript MCP Server](https://www.onshape.com/en/features/onshape-labs) — Onshape Labs（PTC）のアーリーアクセス。AIクライアントがFeatureScriptを記述・実行・修正し、再利用可能なパラメトリックなカスタムフィーチャーを作成。Tags: `Commercial`
-- [text-to-cad](https://github.com/earthtojake/text-to-cad) ![GitHub stars](https://img.shields.io/github/stars/earthtojake/text-to-cad?style=flat&label=%E2%AD%90) ![GitHub release](https://img.shields.io/github/v/release/earthtojake/text-to-cad?style=flat&label=release) ![GitHub release date](https://img.shields.io/github/release-date/earthtojake/text-to-cad?style=flat&label=released) — AIコーディングエージェントにCAD機能（STEP/STL出力）を与えるオープンソースのツールキット。2026年10月にGitHubでトレンド入り。Tags: `OSS`
+- [text-to-cad](https://github.com/earthtojake/text-to-cad) ![GitHub stars](https://img.shields.io/github/stars/earthtojake/text-to-cad?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F11%2F03-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/earthtojake/text-to-cad?style=flat) — AIコーディングエージェントにCAD機能（STEP/STL出力）を与えるオープンソースのツールキット。2026年10月にGitHubでトレンド入り。Tags: `OSS`
+- [FreeCAD MCP](https://github.com/neka-nat/freecad-mcp) ![New](https://img.shields.io/badge/-NEW-red?style=flat) ![GitHub stars](https://img.shields.io/github/stars/neka-nat/freecad-mcp?style=flat&label=%E2%AD%90) ![Last commit](https://img.shields.io/github/last-commit/neka-nat/freecad-mcp?style=flat) — ClaudeなどのAIクライアントからFreeCADモデルを作成・編集できるMCPサーバー（部品ライブラリ、スクリーンショット、Python実行）。Tags: `OSS`
+- [build123d-mcp](https://github.com/pzfreo/build123d-mcp) ![New](https://img.shields.io/badge/-NEW-red?style=flat) ![GitHub stars](https://img.shields.io/github/stars/pzfreo/build123d-mcp?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F10%2F15-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/pzfreo/build123d-mcp?style=flat) — PythonのCADライブラリbuild123dをラップしたMCPサーバー。エージェントが3Dモデルを対話的に作成・確認・エクスポートできる。Tags: `OSS`
 
 ## 関連Awesomeリスト
 
-- [awesome-ai-cae](https://github.com/kimimgo/awesome-ai-cae) ![GitHub stars](https://img.shields.io/github/stars/kimimgo/awesome-ai-cae?style=flat&label=%E2%AD%90) — AI呼び出し可能なCAE/CADツールとエージェントレディネス。Tags: `OSS`
-- [awesome-cad-cae](https://github.com/shvyac/awesome-cad-cae) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-cad-cae?style=flat&label=%E2%AD%90) — CAD/CAEアプリ、カーネル、FEA/CFD、トポロジー最適化。Tags: `OSS`
-- [awesome-open-source-solvers](https://github.com/shvyac/awesome-open-source-solvers) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-open-source-solvers?style=flat&label=%E2%AD%90) — オープンなFEM/CFD/MBD/粒子ソルバーと科学計算スタック。Tags: `OSS`
-- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/Awesome-Physical-Engineering-AI) ![GitHub stars](https://img.shields.io/github/stars/010zx00x1/Awesome-Physical-Engineering-AI?style=flat&label=%E2%AD%90) — ハードウェアエンジニアリング向けAI（CAD、シミュレーション、製造）。Tags: `OSS`
-- [awesome-mechanical-engineering](https://github.com/brandonhimpfen/awesome-mechanical-engineering) ![GitHub stars](https://img.shields.io/github/stars/brandonhimpfen/awesome-mechanical-engineering?style=flat&label=%E2%AD%90) ![GitHub release](https://img.shields.io/github/v/release/brandonhimpfen/awesome-mechanical-engineering?style=flat&label=release) ![GitHub release date](https://img.shields.io/github/release-date/brandonhimpfen/awesome-mechanical-engineering?style=flat&label=released) — より広い機械工学ツール、プラットフォーム、学習リソース。Tags: `OSS`
+- [awesome-ai-cae](https://github.com/kimimgo/awesome-ai-cae) ![GitHub stars](https://img.shields.io/github/stars/kimimgo/awesome-ai-cae?style=flat&label=%E2%AD%90) ![Last commit](https://img.shields.io/github/last-commit/kimimgo/awesome-ai-cae?style=flat) — AI呼び出し可能なCAE/CADツールとエージェントレディネス。Tags: `OSS`
+- [awesome-cad-cae](https://github.com/shvyac/awesome-cad-cae) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-cad-cae?style=flat&label=%E2%AD%90) ![Last commit](https://img.shields.io/github/last-commit/shvyac/awesome-cad-cae?style=flat) — CAD/CAEアプリ、カーネル、FEA/CFD、トポロジー最適化。Tags: `OSS`
+- [awesome-open-source-solvers](https://github.com/shvyac/awesome-open-source-solvers) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-open-source-solvers?style=flat&label=%E2%AD%90) ![Last commit](https://img.shields.io/github/last-commit/shvyac/awesome-open-source-solvers?style=flat) — オープンなFEM/CFD/MBD/粒子ソルバーと科学計算スタック。Tags: `OSS`
+- [Awesome-Physical-Engineering-AI](https://github.com/010zx00x1/Awesome-Physical-Engineering-AI) ![GitHub stars](https://img.shields.io/github/stars/010zx00x1/Awesome-Physical-Engineering-AI?style=flat&label=%E2%AD%90) ![Last commit](https://img.shields.io/github/last-commit/010zx00x1/Awesome-Physical-Engineering-AI?style=flat) — ハードウェアエンジニアリング向けAI（CAD、シミュレーション、製造）。Tags: `OSS`
+- [awesome-mechanical-engineering](https://github.com/brandonhimpfen/awesome-mechanical-engineering) ![GitHub stars](https://img.shields.io/github/stars/brandonhimpfen/awesome-mechanical-engineering?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F05%2F02-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/brandonhimpfen/awesome-mechanical-engineering?style=flat) — より広い機械工学ツール、プラットフォーム、学習リソース。Tags: `OSS`
 
 ## 自動車V&V（深掘り）
 
@@ -143,8 +147,8 @@ ODSエコシステムへのポインタ（網羅カタログではありませ�
 
 ### オープンソースMBSE / シナリオ（少数）
 
-- [Eclipse Capella](https://github.com/eclipse-capella/capella) ![GitHub stars](https://img.shields.io/github/stars/eclipse-capella/capella?style=flat&label=%E2%AD%90) ![GitHub release](https://img.shields.io/github/v/release/eclipse-capella/capella?style=flat&label=release) ![GitHub release date](https://img.shields.io/github/release-date/eclipse-capella/capella?style=flat&label=released) — システムレベル間のアーキテクチャ分解向けArcadia MBSE。Tags: `OSS`
-- [CARLA](https://github.com/carla-simulator/carla) ![GitHub stars](https://img.shields.io/github/stars/carla-simulator/carla?style=flat&label=%E2%AD%90) ![GitHub release](https://img.shields.io/github/v/release/carla-simulator/carla?style=flat&label=release) ![GitHub release date](https://img.shields.io/github/release-date/carla-simulator/carla?style=flat&label=released) + [esmini / OpenSCENARIO](https://github.com/esmini/esmini) ![GitHub stars](https://img.shields.io/github/stars/esmini/esmini?style=flat&label=%E2%AD%90) ![GitHub release](https://img.shields.io/github/v/release/esmini/esmini?style=flat&label=release) ![GitHub release date](https://img.shields.io/github/release-date/esmini/esmini?style=flat&label=released) — シナリオレベルV&V向けオープン運転シミュレータとシナリオ標準。Tags: `OSS`
+- [Eclipse Capella](https://github.com/eclipse-capella/capella) ![GitHub stars](https://img.shields.io/github/stars/eclipse-capella/capella?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F08%2F03-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/eclipse-capella/capella?style=flat) — システムレベル間のアーキテクチャ分解向けArcadia MBSE。Tags: `OSS`
+- [CARLA](https://github.com/carla-simulator/carla) ![GitHub stars](https://img.shields.io/github/stars/carla-simulator/carla?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2025%2F09%2F16-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/carla-simulator/carla?style=flat) + [esmini / OpenSCENARIO](https://github.com/esmini/esmini) ![GitHub stars](https://img.shields.io/github/stars/esmini/esmini?style=flat&label=%E2%AD%90) ![Release date](https://img.shields.io/badge/release-2026%2F11%2F05-blue?style=flat) ![Last commit](https://img.shields.io/github/last-commit/esmini/esmini?style=flat) — シナリオレベルV&V向けオープン運転シミュレータとシナリオ標準。Tags: `OSS`
 - [openMDM](https://openmdm.org/) — ASAM ODSベースの試験データ管理向けEclipseコンポーネント（Eclipseワーキンググループは活動終了）。Tags: `OSS`
 
 ## コントリビューション
@@ -176,10 +180,12 @@ ODSエコシステムへのポインタ（網羅カタログではありませ�
 - [awesome-local-llm](https://github.com/shvyac/awesome-local-llm) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-local-llm?style=flat&label=%E2%AD%90)
 - [awesome-m5stack-arduino](https://github.com/shvyac/awesome-m5stack-arduino) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-m5stack-arduino?style=flat&label=%E2%AD%90)
 - [awesome-map-gis](https://github.com/shvyac/awesome-map-gis) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-map-gis?style=flat&label=%E2%AD%90)
+- [awesome-mcp-ai](https://github.com/shvyac/awesome-mcp-ai) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-mcp-ai?style=flat&label=%E2%AD%90)
 - [awesome-meshless-cae](https://github.com/shvyac/awesome-meshless-cae) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-meshless-cae?style=flat&label=%E2%AD%90)
 - [awesome-online-services](https://github.com/shvyac/awesome-online-services) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-online-services?style=flat&label=%E2%AD%90)
 - [awesome-open-source-solvers](https://github.com/shvyac/awesome-open-source-solvers) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-open-source-solvers?style=flat&label=%E2%AD%90)
 - [awesome-osint-ai](https://github.com/shvyac/awesome-osint-ai) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-osint-ai?style=flat&label=%E2%AD%90)
+- [awesome-quantum](https://github.com/shvyac/awesome-quantum) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-quantum?style=flat&label=%E2%AD%90)
 - [awesome-redmine-ai](https://github.com/shvyac/awesome-redmine-ai) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-redmine-ai?style=flat&label=%E2%AD%90)
 - [awesome-requirements-system-ai](https://github.com/shvyac/awesome-requirements-system-ai) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-requirements-system-ai?style=flat&label=%E2%AD%90)
 - [awesome-trading-stock](https://github.com/shvyac/awesome-trading-stock) ![GitHub stars](https://img.shields.io/github/stars/shvyac/awesome-trading-stock?style=flat&label=%E2%AD%90)
